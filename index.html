@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.88.1">
+  <title>SOY PACO SANTOS</title>
+
+  <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/"> -->
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navbar.css">
+
+
+
+  <link rel="stylesheet" href="css/carouselFideicomiso.css">
+  <link rel="stylesheet" href="css/carouselImg.css">
+
+
+
+  <link rel="stylesheet" href="css/carouselImg.css">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/blog/">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css'>
+  <link rel="stylesheet" href="css/sidebars.css">
+  <link rel="stylesheet" href="css/carouselFideicomiso.css">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/carousel.css" rel="stylesheet">
+</head>
+
+<body>
+  <main class="container">
+
+    <header class="d-flex flex-wrap justify-content-center py-3 border-bottom align-items-center background-paco">
+      <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <img src="img/logotipo-pacosantos.png" alt="" width="130">
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="index.html" class="nav-link active-first active" aria-current="page">Inicio</a>
+        </li>
+        <li class="nav-item"><a href="quienes.html" class="nav-link">¿Quién es?</a></li>
+        <li class="nav-item"><a href="fideicomiso.html" class="nav-link ">Fideicomiso</a></li>
+        <li class="nav-item"><a href="testimoniales.html" class="nav-link disabled">Testimoniales</a></li>
+        <li class="nav-item"><a href="noticias" class="nav-link disabled">Noticias</a></li>
+      </ul>
+    </header>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded gradient" aria-label="Twelfth navbar example">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10"
+          aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="cuautitlan.html">Cuatitlán Izcalli</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tlalnepantla.html">Tlalnepantla</a>
+            </li>
+            <li class="nav-item">
+              <a href="tultitlan.html" class="nav-link">Tultitlán</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="toluca.html">Toluca</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <!-- <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" /></svg>
+
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Example headline.</h1>
+              <p>Some representative placeholder content for the first slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" /></svg>
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Some representative placeholder content for the second slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" /></svg>
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>One more for good measure.</h1>
+              <p>Some representative placeholder content for the third slide of this carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> -->
+
+    <div class="carousel-prueb">
+      <div class="texto-banner">
+        <h1>PACO SANTOS</h1>
+        <h2>DIPUTADO LOCAL DISTRITO 26</h2>
+      </div>
+      <video src="img/arranque_paco.mp4" width="100%" height="auto" muted autoplay loop></video>
+    </div>
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing ">
+      <div class="col-lg-12 text-center mt-5">
+        <h2 class="color-blue display-5"><b>Oficinas</b></h2>
+      </div>
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4 my-5">
+          <div class="card">
+            <div class="card-img">
+              <img src="img/cuautitlan.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h5 class="text-start ">Cuautitlán Izcalli</h5>
+              <p class="text-start m-0">Participar en el desarrollo comunitario, siendo enlace directo entre la sociedad
+                y la legislación, estableciendo cooperación y así establecer un desarrollo eficaz que mejore la calidad
+                de vida de los izcallenses.</p>
+            </div>
+            <div class="">
+              <div class="d-grid gap-2">
+                <a href="cuautitlan.html" class="btn btn-primary btn-lg bg-amarillo border-none m-3" type="button">Ver
+                  más</a>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 my-5">
+          <div class="card">
+            <div class="card-img">
+              <img src="img/tlalnepantla.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h5 class="text-start ">Tlalnepantla</h5>
+              <p class="text-start m-0"> Brindar un trato digno y eficiente de las personas, generando la cercanía con
+                el Diputado Local para que a partir de la atención, vinculación y gestión consolidar el proyecto
+                político social.</p>
+            </div>
+            <div class=" ">
+              <div class="d-grid gap-2">
+                <a href="tlalnepantla.html" class="btn btn-primary btn-lg bg-rojo border-none m-3"
+                  type="button">Button</a>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 my-5">
+          <div class="card">
+            <div class="card-img">
+              <img src="img/tultitlan.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h5 class="text-start ">Tultitlán</h5>
+              <p class="text-start m-0">Brindar atención a los habitantes de Tultitlán a través de programas sociales y
+                jornadas
+                comunitarias.
+                <br><br><br></p>
+            </div>
+            <div>
+              <div class="d-grid gap-2">
+                <a href="tultitlan.html" class="btn btn-primary btn-lg  bg-azul border-none m-3" type="button">Ver
+                  más</a>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <!-- <hr class="featurette-divider"> -->
+      <div class="container">
+        <div class="col-lg-12 text-start text-dark text-center">
+          <h2 class="color-blue display-5"><b>Quien soy</b></h2>
+        </div>
+        <div class="p-5 mb-4 border-blue rounded-3 bg-soypaco my-5">
+          <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">PACO SANTOS</h1>
+            <p class="col-md-8 fs-4">“Además de ampliar el volumen de negocios, busco contribuir al beneficio de las
+              personas que laboran en mis empresas.
+              Nuestra prosperidad esta directamente ligada a nuestros clientes y distribuidores”. </p>
+            <button class="btn btn-primary btn-lg" type="button">Conoce mas de mi</button>
+          </div>
+        </div>
+
+        <div class="row align-items-md-stretch my-5">
+          <div class="">
+            <div class="col-md-12 d-flex flex-wrap">
+              <div class="card col-lg-3 col-12 my-2 p-5 text-center bg-1">
+                <p class="display-6"><b>$86,000</b></p>
+                <p>Donaciones</p>
+              </div>
+              <div class="card col-lg-3 col-12 my-2 p-5 text-center bg-2">
+                <p class="display-6"><b>28</b></p>
+                <p>proyectos en marcha</p>
+              </div>
+              <div class="card col-lg-3 col-12 my-2 p-5 text-center bg-3">
+                <p class="display-6"><b>8</b></p>
+                <p>Talleres</p>
+              </div>
+              <div class="card col-lg-3 col-12 my-2 p-5 text-center bg-4">
+                <p class="display-6"><b>4</b></p>
+                <p>Oficinas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+      <div class="row mb-2">
+
+        <div class="col-lg-12 text-center">
+          <h2 class="color-blue display-5 my-5"><b>Fideicomiso</b></h2>
+        </div>
+
+
+        <div class="col-lg-12">
+
+          <div class="row align-items-md-stretch">
+            <div class="col-md-6">
+              <div class="h-100 p-5 rounded-3">
+                <p class="text-dark" style="text-align: justify; font-size: 18px;">
+                  Somos una Asociación Civil sin fines de lucro
+      
+                  comprometida con las causas sociales, trabajando para mejorar la calidad de
+      
+                  vida de los grupos más vulnerables, teniendo como beneficiarios en todas y cada
+      
+                  una de las actividades que realiza a personas, sectores y regiones de escasos
+      
+                  recursos; comunidades indígenas y grupos vulnerables por edad, sexo o problemas
+      
+                  de discapacidad (niños, adolescentes, jóvenes, adultos mayores, mujeres
+      
+                  maltratadas y madres solteras)
+                </p>
+
+                <button class="btn btn-outline-light" type="button">Example button</button>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="h-100 p-5 border-none border rounded-3">
+                <img src="img/img-fideicomiso-banner.jpg" alt="">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <section class="testimonials">
+          <div class="container">
+            <div class="row">
+              <div class="col-ms-12">
+                <div id="customers-testimonials" class="owl-carousel">
+
+                  <!--TESTIMONIAL 1 -->
+                  <!-- <div class="item">
+                    <div class="shadow-effect">
+                      <img class="img-responsive" src="img/img-gumen-01.JPG" alt="">
+                    </div>
+                  </div> -->
+                  <!--END OF TESTIMONIAL 1 -->
+                  <!--TESTIMONIAL 2 -->
+                  <div class="item">
+                    <div class="shadow-effect">
+                      <img class="img-responsive" src="img/img-gumen-02.JPG" alt="">
+                    </div>
+                  </div>
+                  <!--END OF TESTIMONIAL 2 -->
+                  <!--TESTIMONIAL 3 -->
+                  <div class="item">
+                    <div class="shadow-effect">
+                      <img class="img-responsive" src="img/img-gumen-03.JPG" alt="">
+                    </div>
+                  </div>
+
+                  <!--END OF TESTIMONIAL 3 -->
+                  <!--TESTIMONIAL 4 -->
+                  <div class="item">
+                    <div class="shadow-effect">
+                      <img class="img-responsive" src="img/img-gumen-04.JPG" alt="">
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="shadow-effect">
+                      <img class="img-responsive" src="img/img-gumen-05.JPG" alt="">
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="shadow-effect">
+                      <img class="img-responsive" src="img/img-gumen-06.JPG" alt="">
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="shadow-effect">
+                      <img class="img-responsive" src="img/img-gumen-07.JPG" alt="">
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="shadow-effect">
+                      <img class="img-responsive" src="img/img-gumen-08.JPG" alt="">
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="shadow-effect">
+                      <img class="img-responsive" src="img/img-gumen-09.JPG" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- /END THE FEATURETTES -->
+
+    </div>
+
+
+
+
+    <!-- FOOTER -->
+
+  </main>
+  <div class="container">
+    <footer class="row row-cols-5 py-5 my-5 border-top">
+      <div class="col">
+        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+          <img src="img/logotipo-pacosantos.png" alt="">
+        </a>
+        <p class="text-center">Soypacosantos&copy; 2021</p>
+      </div>
+
+      <div class="col">
+
+      </div>
+
+      <div class="col">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/crouselFideicomiso.js"></script>
+  <script src="js/main.js"></script>
+  <!-- <script src="js/script.js"></script> -->
+  <script src="js/sidebars.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js'></script>
+  <script src="js/script.js"></script>
+  <script src="js/carouselImg.js"></script>
+</body>
+
+</html>
