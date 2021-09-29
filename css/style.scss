@@ -5,6 +5,14 @@ $rojo-paco: #c11631;
 $amarillo-paco: #ffdd0e;
 $azul-claro: #04498e;
 
+// @font-face {
+//     font-family: Expo2;
+//     src: url(../fuente/);
+// }
+
+*{
+    font-family: Expo2
+}
 
 body {
     padding-top: 0 !important;
@@ -157,6 +165,22 @@ img {
 
     height: 300px !important;
     background: url(../img/soypacosantos.jpg) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+
+    &::after {
+        content: "";
+        background: rgba(0, 0, 0, 0.5);
+        width: 100vw;
+        height: 100%;
+    }
+
+}
+.banner-fideicomiso {
+
+    height: 300px !important;
+    background: url(../img/fondosoypacosantos.png) !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -456,4 +480,7 @@ img {
         }
 
     }
+}
+.icon-list{
+    list-style: none;
 }
