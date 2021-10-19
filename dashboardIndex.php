@@ -1,3 +1,10 @@
+  <?php 
+  include ("conexion.php");
+  $usuarios="SELECT * FROM tb_usuarios";
+  
+  ?>
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -36,7 +43,10 @@
     <link href="css/dashboard.css" rel="stylesheet">
   </head>
   <body>
-    
+ 
+
+
+      
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
   <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Company name</a>
   <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,9 +72,9 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="usuarios.php">
               <span data-feather="file"></span>
-              Orders
+              Usuarios
             </a>
           </li>
           <li class="nav-item">
@@ -145,70 +155,11 @@
 
       <!-- <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas> -->
 
-      <h2>Informacion de los eventos</h2>
+      <h2>Usuarios registrados</h2>
       <div class="table-responsive">
         <table class="table table-striped table-sm">
-          <thead>
-            <tr>
-              <th scope="col">ID</th>
-              <th scope="col">Evento</th>
-              <th scope="col">Descripcion</th>
-              <th scope="col">Fecha</th>
-              <th scope="col">Oficina</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>random</td>
-              <td>data</td>
-              <td>placeholder</td>
-              <td>text</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>placeholder</td>
-              <td>irrelevant</td>
-              <td>visual</td>
-              <td>layout</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>data</td>
-              <td>rich</td>
-              <td>dashboard</td>
-              <td>tabular</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>information</td>
-              <td>placeholder</td>
-              <td>illustrative</td>
-              <td>data</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>text</td>
-              <td>random</td>
-              <td>layout</td>
-              <td>dashboard</td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td>dashboard</td>
-              <td>irrelevant</td>
-              <td>text</td>
-              <td>placeholder</td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td>dashboard</td>
-              <td>illustrative</td>
-              <td>rich</td>
-              <td>data</td>
-            </tr>
-       
-          </tbody>
+  
+  
         </table>
       </div>
     </main>

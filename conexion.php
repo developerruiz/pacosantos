@@ -1,3 +1,5 @@
-<?php
-$conexion = mysqli_connect("localhost","u838276928_usrnatureamx","W7[HmTwv","u838276928_dbnatureamx");
+<?php 
+$conexion = mysqli_connect("localhost","root","","db_pacosantos");
+ mysqli_set_charset($conexion, "utf8");
+ 
 

@@ -1,3 +1,10 @@
+  <?php 
+  include ("conexion.php");
+  $usuarios="SELECT * FROM tb_usuarios";
+  
+  ?>
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -23,7 +30,7 @@
         -moz-user-select: none;
         user-select: none;
       }
-        
+
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -37,8 +44,21 @@
   </head>
   <body>
  
-  <?php require 'complementos/header.php'; ?>
 
+
+      
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Company name</a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+  <div class="navbar-nav">
+    <div class="nav-item text-nowrap">
+      <a class="nav-link px-3" href="#">Sign out</a>
+    </div>
+  </div>
+</header>
 
 <div class="container-fluid">
   <div class="row">
@@ -46,13 +66,13 @@
       <div class="position-sticky pt-3">
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link" href="dashboardIndex.php">
+            <a class="nav-link active" aria-current="page" href="#">
               <span data-feather="home"></span>
               HOME
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="usuarios.php">
+            <a class="nav-link" href="usuarios.php">
               <span data-feather="file"></span>
               Usuarios
             </a>
@@ -60,7 +80,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="shopping-cart"></span>
-              Eventos
+              Products
             </a>
           </li>
           <li class="nav-item">
@@ -123,64 +143,24 @@
         <h1 class="h2">Dashboard</h1>
         <div class="btn-toolbar mb-2 mb-md-0">
           <div class="btn-group me-2">
-            <div class="me-3 d-flex align-items-center justify-content-center">
-              <?php 
-                date_default_timezone_set("America/Mexico_City");
-                echo date("l d F Y");
-               ?>
-            </div>
-            
-            <button type="button" class="btn btn-success rounded">Export</button>
-            
+            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
           </div>
+          <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+            <span data-feather="calendar"></span>
+            This week
+          </button>
         </div>
       </div>
 
       <!-- <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas> -->
 
-      <h2>Registrar Usuario</h2>
+      <h2>Usuarios registrados</h2>
       <div class="table-responsive">
-        <form class="col-lg-12 d-flex flex-wrap" method="POST" action="usuarioRegistro.php">
-            <div class="col-6 p-2">
-                <label>Nombre Completo</label>
-                <input type="text" name="nombre" placeholder="Nombre" class="col-12 form-control" required="true">
-            </div>
-            <div class="col-6 p-2">
-                <label>Correo Electrónico</label>
-                <input type="email" name="email" placeholder="Email" class="col-12 form-control" required="true">
-            </div>
-               <div class="col-6 p-2">
-                <label>Contraseña</label>
-                <input type="password" name="contraseña" placeholder="Contraseña" class="col-12 form-control" required="true">
-            </div>   
-            <div class="col-6 p-2">
-                <label>
-                  
-                </label>
-<select name="oficina" id="" class="form-select col-12" >
-<?php 
-include ('conexion.php');
-$consultaUsuario=" SELECT * FROM tb_oficina";
-$datosConsulta = mysqli_query($conexion,$consultaUsuario) or die(mysql_error($conexion));
-
-?> 
-
-<?php foreach ($datosConsulta as $opciones): ?>
-
-
-                <option value="<?php echo $opciones['oficina']?>"><?php echo $opciones['oficina']?></option>
+        <table class="table table-striped table-sm">
   
-<?php endforeach ?>
   
-
-                </select>
-            </div>              
-
-            <div class="col-6 p-2">
-                 <button type="submit" class="btn btn-info">Agregar</button>
-                 <a href="usuarios.php">Regresar</a>
-            </div>
-        </form>
+        </table>
       </div>
     </main>
   </div>

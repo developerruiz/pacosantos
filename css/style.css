@@ -1,4 +1,9 @@
 @charset "UTF-8";
+@font-face {
+  font-family: Expo2;
+  src: url(../fuente/Exo2-Bold.otf);
+}
+
 * {
   font-family: Expo2;
 }
@@ -14,6 +19,17 @@ body {
 main,
 footer {
   background: #f7f7f7;
+}
+
+.img-pacosantos {
+  position: fixed;
+  z-index: 99;
+  margin-left: 87%;
+  margin-top: 35%;
+}
+
+.img-pacosantos img {
+  width: 125px;
 }
 
 img {
@@ -194,12 +210,14 @@ img {
   font-weight: 900;
   font-size: 4rem !important;
   color: #fff;
+  font-family: Expo2;
 }
 
 .texto-banner h2 {
   font-weight: 900;
   font-size: 2.3rem !important;
   color: #fff;
+  font-family: Expo2;
 }
 
 @media screen and (max-width: 500px) {
@@ -444,5 +462,48 @@ img {
 
 .icon-list {
   list-style: none;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.ocultar {
+  opacity: 0;
+}
+
+.animar {
+  -webkit-animation: aparecer 1.3s;
+          animation: aparecer 1.3s;
+}
+
+#contadores_principal .contador .contador_cantidad {
+  font-family: Expo2;
+}
+
+#contadores_principal .contador h4 {
+  font-family: Expo2 !important;
 }
 /*# sourceMappingURL=style.css.map */

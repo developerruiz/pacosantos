@@ -5,13 +5,13 @@ $rojo-paco: #c11631;
 $amarillo-paco: #ffdd0e;
 $azul-claro: #04498e;
 
-// @font-face {
-//     font-family: Expo2;
-//     src: url(../fuente/);
-// }
+@font-face {
+    font-family: Expo2;
+    src: url(../fuente/Exo2-Bold.otf);
+}
 
 *{
-    font-family: Expo2
+    font-family: Expo2;
 }
 
 body {
@@ -26,7 +26,16 @@ main,
 footer {
     background: rgb(247, 247, 247);
 }
+.img-pacosantos{
+    position: fixed;
+    z-index: 99;
+    margin-left: 87%;
+    margin-top: 35%;
 
+    img{
+        width: 125px;
+    }
+}
 
 img {
     width: 100%;
@@ -219,12 +228,14 @@ img {
         font-weight: 900;
         font-size: 4rem !important;
         color: #fff;
+        font-family: Expo2;
     }
 
     h2 {
         font-weight: 900;
         font-size: 2.3rem !important;
         color: #fff;
+        font-family: Expo2;
     }
 
 }
@@ -483,4 +494,37 @@ img {
 }
 .icon-list{
     list-style: none;
+}
+
+@keyframes aparecer {
+
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.ocultar {
+    opacity: 0;
+}
+
+.animar {
+    animation: aparecer 1.3s;
+}
+
+#contadores_principal{
+    .contador{  
+        .contador_cantidad{
+            font-family: Expo2;
+        }
+        h4{
+            font-family: Expo2!important;
+        }
+    }
 }
