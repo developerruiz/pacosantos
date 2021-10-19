@@ -45,7 +45,7 @@
     @media (min-width: 768px) {
       .bd-placeholder-img-lg {
         font-size: 3.5rem;
-      }
+      } 
     }
   </style>
 
@@ -59,21 +59,9 @@
 <body>
 
   <main class="container">
-    <div class="">
-      <header class="d-flex flex-wrap justify-content-center py-3 border-bottom align-items-center background-paco">
-        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-          <img src="img/logotipo-pacosantos.png" alt="" width="130">
-        </a>
+    
+    <?php require 'complementos/header.php'; ?>
 
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="index.html" class="nav-link " aria-current="page">Inicio</a></li>
-          <li class="nav-item"><a href="quienes.html" class="nav-link">¿Quién es?</a></li>
-          <li class="nav-item"><a href="fideicomiso.html" class="nav-link">Fideicomiso</a></li>
-          <!-- <li class="nav-item"><a href="testimoniales.html" class="nav-link disabled">Testimoniales</a></li>
-          <li class="nav-item"><a href="noticias" class="nav-link disabled">Noticias</a></li> -->
-        </ul>
-      </header>
-    </div>
 
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light rounded gradient" aria-label="Twelfth navbar example">
@@ -86,24 +74,26 @@
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="cuautitlan.html">Cuautitlán Izcalli</a>
+              <a class="nav-link submenu-active" aria-current="page" href="cuautitlan.php">Cuautitlán Izcalli</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tlalnepantla.html">Tlalnepantla</a>
+              <a class="nav-link" href="tlalnepantla.php">Tlalnepantla</a>
             </li>
             <li class="nav-item">
-              <a href="tultitlan.html" class="nav-link submenu-active">Tultitlán</a>
+              <a href="tultitlan.php" class="nav-link">Tultitlán</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link" href="toluca.html">Toluca</a>
+              <a class="nav-link" href="toluca.php">Toluca</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="mb-4 text-white rounded bg-dark align-items-center d-flex banner-gral">
-
+    <div class="mb-4  text-white rounded bg-dark align-items-center d-flex banner-gral">
+      <!-- <div class="col-md-6 px-0 ">
+        <h1 class="display-4 fst-italic">Cuautitlán Izcalli</h1>
+      </div> -->
     </div>
 
 
@@ -116,18 +106,18 @@
 
         <article class="blog-post">
           <h2 class="blog-post-title mb-4">
-            OFICINA DE ENLACE CON LA DIPUTACIÓN DEL DISTRITO XXVI TULTITLÁN
+            OFICINA DE ENLACE CON LA DIPUTACIÓN DEL DISTRITO XXVI CUAUTITLÁN IZCALLI
           </h2>
-          <!-- <i class="fas fa-align-justify"></i> -->
-          <article>Hidalgo Fabela No. 1 Altos Col. Centro Tultitlán de Mariano Escobedo, Estado de México CP.54900
+          <article>Av. José María Morelos 26, Jardines del Alba 2, 54750 Cuautitlán Izcalli, (Plaza las Palomas)
           </article>
+          <!-- <i class="fas fa-align-justify"></i>v -->
           <br>
-          <h4>Funcionamiento</h4>
           <!-- <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p> -->
+          <h4><b>Funcionamiento</b></h4>
           <p>
-            Encargada de promover la participación ciudadana, con atención directa atendiendo de manera oportuna y
-            adecuada las peticiones de los habitantes y trabajando en la creación de los programas que lleven a un bien
-            común.
+            Generar el contacto directo con la ciudadanía izcallense y acercamiento con el Diputado Local, Francisco
+            Santos. Será un foro de solución de problemáticas sociales, con atención directa, oportuna y adecuada de las
+            peticiones de los habitantes.
           </p>
 
           <hr>
@@ -135,6 +125,8 @@
 
 
 
+
+    
 
         <div class="col-md-12">
           <div class="col-lg-12">
@@ -146,27 +138,29 @@
 
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
                 <div class="col">
-                  <div class="card shadow-sm">
-                    <div class="card-img">
-                      <img src="img/empoderamiento.png" alt="">
-                    </div>
-
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h5><b>Empoderamiento de la Mujer</b></h5>
+            <a href="empoderamiento-mujer-c.php">
+                    <div class="card shadow-sm">
+                      <div class="card-img">
+                        <img src="img/empoderamiento.png" alt="">
                       </div>
-                      <p class="card-text"><b>Objetivo:</b> Impulsar y fomentar el crecimiento personal y económico de
-                        las mujeres del
-
-                        municipio</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+              
+                      <div class="card-body">
+                        <div class="card-title">
+                          <h5><b>Empoderamiento de la Mujer</b></h5>
                         </div>
-                        <!-- <small class="text-muted">9 mins</small> -->
+                        <p class="card-text"><b>Objetivo:</b> Impulsar y fomentar el crecimiento personal y económico de
+                          las mujeres del
+              
+                          municipio</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+                          </div>
+                          <!-- <small class="text-muted">9 mins</small> -->
+                        </div>
                       </div>
                     </div>
-                  </div>
+            </a>
                 </div>
 
                 <div class="col">
@@ -346,7 +340,7 @@
           </div>
           <!-- END OF TESTIMONIALS -->
         </div>
-
+     
 
         <article class="blog-post">
           <div class="col-lg-12 my-4">
@@ -389,14 +383,11 @@
 
           <hr>
         </article>
-
-
-
         <div class=" mb-3 bg-light rounded-3 border-blue">
           <div class="container-fluid p-5">
             <h2>Objetivo</h2>
             <p class="col-md-8 fs-6">
-              Atender de manera oportuna las peticiones de los habitantes de Tultitlán.
+              Será un generador de actividades itinerantes bien estructuradas y definidas con cada uno de los ocho programas que se ofrecerán en la oficina de Atención y Gestión ciudadana.
             </p>
             <!-- <button class="btn btn-primary btn-lg" type="button">Example button</button> -->
           </div>
@@ -406,21 +397,27 @@
           <div class="col-md-6 pb-3">
             <div class="h-100 p-5 text-dark bg-light rounded-3 border-amarillo">
               <h2>Misión</h2>
-              <p>Brindar atención a los habitantes de Tultitlán a través de programas sociales y jornadas
+              <p>
+                Participar en el desarrollo comunitario, siendo enlace directo entre la sociedad y la
 
-                comunitarias</p>
+                legislación, estableciendo cooperación y así establecer un desarrollo eficaz que mejore la
+                
+                calidad de vida de los izcallenses.
+              </p>
             </div>
           </div>
 
           <div class="col-md-6">
             <div class="h-100 p-5 bg-light rounded-3 border-rojo">
               <h2>Visión</h2>
-              <p>Ser una oficina con más participación ciudadana en el municipio, brindando atención directa a las
-                comunidades apoyando en sus necesidades en busca de mejorar su calidad de vida.</p>
+              <p>
+                Consolidar los ideales humanos a través de los programas sociales enfocados a beneficiar
+
+                a los ciudadanos del municipio.
+              </p>
             </div>
           </div>
         </div>
-
 
 
       </div>
@@ -498,7 +495,7 @@
                 </button>
                 <div class="collapse" id="account-collapse">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="toluca.html" class="link-dark rounded">Oficina toluca</a></li>
+                    <li><a href="toluca.php" class="link-dark rounded">Oficina toluca</a></li>
                     <!-- <li><a href="#" class="link-dark rounded">Profile</a></li>
                     <li><a href="#" class="link-dark rounded">Settings</a></li>
                     <li><a href="#" class="link-dark rounded">Sign out</a></li> -->
@@ -509,8 +506,7 @@
           </div>
 
 
-
-          <form class="row g-3" action="correoTultitlan.php" method="POST">
+          <form class="row g-3" action="correoCuautitlan.php" method="POST">
             <div class="col-md-12 ">
               <label for="inputNombre" class="form-label">Nombre</label>
               <input type="text" class="form-control" id="inputNombre" name="nombre">
@@ -525,14 +521,13 @@
             </div>
             <div class="col-md-12">
               <label for="inputMensaje" class="form-label">Mensaje</label>
-              <textarea cols=10 rows="10" type="number" class="form-control" id="inputMensaje"
-                name="mensaje"></textarea>
+              <textarea cols=10 rows="10" type="number" class="form-control" id="inputMensaje" name="mensaje"></textarea>
             </div>
-
+            
             <div class="col-12 mb-4">
-              <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+              <button type="submit" class="btn btn-primary btn-lg">Enviar</button> 
             </div>
-
+       
           </form>
 
 
@@ -568,35 +563,32 @@
         <div class="col-md-4 col-12 ps-3">
           <h5>Información</h5>
           <ul class="lista-footer">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="quienes.html">Quien soy</a></li>
-            <li><a href="fideicomiso.html">Fideicomiso</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="index.php">Inicio</a></li>
+            <li><a href="quienes.php">Quien soy</a></li>
+            <li><a href="fideicomiso.php">Fideicomiso</a></li>
+            <li><a href="contacto.php">Contacto</a></li>
 
           </ul>
         </div>
         <div class="col-md-4 col-12 ps-3">
           <h5>Oficinas</h5>
           <ul class="lista-footer">
-            <li><a href="cuautitlan.html">Cuautitlán Izcalli</a></li>
-            <li><a href="tlalnepantla.html">Tlalnepantla</a></li>
-            <li><a href="tultitlan.html">Tultitlan</a></li>
-            <li><a href="toluca.html">Toluca</a></li>
+            <li><a href="cuautitlan.php">Cuautitlán Izcalli</a></li>
+            <li><a href="tlalnepantla.php">Tlalnepantla</a></li>
+            <li><a href="tultitlan.php">Tultitlan</a></li>
+            <li><a href="toluca.php">Toluca</a></li>
 
           </ul>
         </div>
       </div>
 
       <div class="col-lg-12 text-center justify-content-center d-flex lista-redes-sociales my-5">
-
-        <li class=""><a href="https://www.facebook.com/SoyPacoSantos"><i
-              class="fab fa-facebook-f color-amarillo"></i></a></li>
-        <li class=""><a href="https://www.instagram.com/soypacosantos/"><i class="fab fa-instagram color-rojo"></i></a>
-        </li>
-        <li class=""><a href="https://twitter.com/soypacosantos"><i class="fab fa-twitter color-azul"></i></a></li>
-        <li class=""><a href="https://www.tiktok.com/@soypacosantos?"><i
-              class="fab fa-tiktok color-azul-obscuro"></i></a></li>
-
+    
+          <li class=""><a href="https://www.facebook.com/SoyPacoSantos"><i class="fab fa-facebook-f color-amarillo"></i></a></li>
+          <li class=""><a href="https://www.instagram.com/soypacosantos/"><i class="fab fa-instagram color-rojo"></i></a></li>
+          <li class=""><a href="https://twitter.com/soypacosantos"><i class="fab fa-twitter color-azul"></i></a></li>
+          <li class=""><a href="https://www.tiktok.com/@soypacosantos?"><i class="fab fa-tiktok color-azul-obscuro"></i></a></li>
+    
       </div>
       <div class="col-12 text-center">
         <h6>&copy;soypacosantos 2021 </h6>

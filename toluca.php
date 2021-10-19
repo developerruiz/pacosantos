@@ -55,21 +55,9 @@
 <body>
 
   <main class="container">
-    <div class="">
-      <header class="d-flex flex-wrap justify-content-center py-3 border-bottom align-items-center background-paco">
-        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-          <img src="img/logotipo-pacosantos.png" alt="" width="130">
-        </a>
+    
+    <?php require 'complementos/header.php'; ?>
 
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="index.html" class="nav-link " aria-current="page">Inicio</a></li>
-          <li class="nav-item"><a href="quienes.html" class="nav-link">¿Quién es?</a></li>
-          <li class="nav-item"><a href="fideicomiso.html" class="nav-link">Fideicomiso</a></li>
-          <!-- <li class="nav-item"><a href="testimoniales.html" class="nav-link disabled">Testimoniales</a></li>
-          <li class="nav-item"><a href="noticias" class="nav-link disabled">Noticias</a></li> -->
-        </ul>
-      </header>
-    </div>
 
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light rounded gradient" aria-label="Twelfth navbar example">
@@ -82,16 +70,16 @@
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="cuautitlan.html">Cuautitlán Izcalli</a>
+              <a class="nav-link" aria-current="page" href="cuautitlan.php">Cuautitlán Izcalli</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tlalnepantla.html">Tlalnepantla</a>
+              <a class="nav-link" href="tlalnepantla.php">Tlalnepantla</a>
             </li>
             <li class="nav-item">
-              <a href="tultitlan.html" class="nav-link">Tultitlán</a>
+              <a href="tultitlan.php" class="nav-link">Tultitlán</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link submenu-active" href="toluca.html">Toluca</a>
+              <a class="nav-link submenu-active" href="toluca.php">Toluca</a>
             </li>
           </ul>
         </div>
@@ -241,7 +229,7 @@
                 </button>
                 <div class="collapse" id="account-collapse">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="toluca.html" class="link-dark rounded">Oficina toluca</a></li>
+                    <li><a href="toluca.php" class="link-dark rounded">Oficina toluca</a></li>
                     <!-- <li><a href="#" class="link-dark rounded">Profile</a></li>
                     <li><a href="#" class="link-dark rounded">Settings</a></li>
                     <li><a href="#" class="link-dark rounded">Sign out</a></li> -->
@@ -308,20 +296,20 @@
         <div class="col-md-4 col-12 ps-3">
           <h5>Información</h5>
           <ul class="lista-footer">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="quienes.html">Quien soy</a></li>
-            <li><a href="fideicomiso.html">Fideicomiso</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="index.php">Inicio</a></li>
+            <li><a href="quienes.php">Quien soy</a></li>
+            <li><a href="fideicomiso.php">Fideicomiso</a></li>
+            <li><a href="contacto.php">Contacto</a></li>
 
           </ul>
         </div>
         <div class="col-md-4 col-12 ps-3">
           <h5>Oficinas</h5>
           <ul class="lista-footer">
-            <li><a href="cuautitlan.html">Cuautitlán Izcalli</a></li>
-            <li><a href="tlalnepantla.html">Tlalnepantla</a></li>
-            <li><a href="tultitlan.html">Tultitlan</a></li>
-            <li><a href="toluca.html">Toluca</a></li>
+            <li><a href="cuautitlan.php">Cuautitlán Izcalli</a></li>
+            <li><a href="tlalnepantla.php">Tlalnepantla</a></li>
+            <li><a href="tultitlan.php">Tultitlan</a></li>
+            <li><a href="toluca.php">Toluca</a></li>
 
           </ul>
         </div>

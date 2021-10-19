@@ -14,6 +14,6 @@ $mensajeCompleto = $mensaje . "\nAtentamente: " . $nombre . "\nEmail:" . $email;
 mail($destinatario, $mensajeCompleto, $header);
 
 echo "<script>alert('correo enviado exitosamente')</script>";
-echo "<script> setTimeout(\"location.href='enlace.tultitlan.html'\",1000)</script>";
+echo "<script> setTimeout(\"location.href='enlace.tultitlan.php'\",1000)</script>";
 
 ?>

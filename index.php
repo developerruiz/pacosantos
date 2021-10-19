@@ -55,21 +55,9 @@
 <body>
   <main class="container rounded-3">
 
-    <div class="">
-      <header class="d-flex flex-wrap justify-content-center py-3 border-bottom align-items-center background-paco">
-        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-          <img src="img/logotipo-pacosantos.png" alt="" width="130">
-        </a>
 
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="index.html" class="nav-link active-first active" aria-current="page">Inicio</a></li>
-          <li class="nav-item"><a href="quienes.html" class="nav-link ">¿Quién es?</a></li>
-          <li class="nav-item"><a href="fideicomiso.html" class="nav-link">Fideicomiso</a></li>
-          <!-- <li class="nav-item"><a href="testimoniales.html" class="nav-link disabled">Testimoniales</a></li>
-          <li class="nav-item"><a href="noticias" class="nav-link disabled">Noticias</a></li> -->
-        </ul>
-      </header>
-    </div>
+
+    <?php require 'complementos/header.php'; ?>
 
 
 
@@ -83,16 +71,16 @@
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="cuautitlan.html">Cuautitlán Izcalli</a>
+              <a class="nav-link" aria-current="page" href="cuautitlan.php">Cuautitlán Izcalli</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tlalnepantla.html">Tlalnepantla</a>
+              <a class="nav-link" href="tlalnepantla.php">Tlalnepantla</a>
             </li>
             <li class="nav-item">
-              <a href="tultitlan.html" class="nav-link">Tultitlán</a>
+              <a href="tultitlan.php" class="nav-link">Tultitlán</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link" href="toluca.html">Toluca</a>
+              <a class="nav-link" href="toluca.php">Toluca</a>
             </li>
           </ul>
         </div>
@@ -130,7 +118,7 @@
             </div>
             <div class="">
               <div class="d-grid gap-2">
-                <a href="cuautitlan.html" class="btn btn-primary btn-lg bg-amarillo border-none m-3" type="button">Ver
+                <a href="cuautitlan.php" class="btn btn-primary btn-lg bg-amarillo border-none m-3" type="button">Ver
                   más</a>
               </div>
             </div>
@@ -153,7 +141,7 @@
 
             <div class="">
               <div class="d-grid gap-2">
-                <a href="tlalnepantla.html" class="btn btn-primary btn-lg bg-rojo border-none m-3"
+                <a href="tlalnepantla.php" class="btn btn-primary btn-lg bg-rojo border-none m-3"
                   type="button">Ver
                   más</a>
               </div>
@@ -175,7 +163,7 @@
             </div>
             <div>
               <div class="d-grid gap-2">
-                <a href="tultitlan.html" class="btn btn-primary btn-lg  bg-azul border-none m-3 " type="button">Ver
+                <a href="tultitlan.php" class="btn btn-primary btn-lg  bg-azul border-none m-3 " type="button">Ver
                   más</a>
               </div>
             </div>
@@ -197,7 +185,7 @@
             <p class="col-md-8 fs-4">“Además de ampliar el volumen de negocios, busco contribuir al beneficio de las
               personas que laboran en mis empresas.
               Nuestra prosperidad esta directamente ligada a nuestros clientes y distribuidores”. </p>
-            <a href="quienes.html" class="btn btn-primary btn-lg" type="button">Conoce más de mi</a>
+            <a href="quienes.php" class="btn btn-primary btn-lg" type="button">Conoce más de mi</a>
           </div>
         </div>
 
@@ -390,20 +378,20 @@
         <div class="col-md-4 col-12 ps-3">
           <h5>Información</h5>
           <ul class="lista-footer">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="quienes.html">Quien soy</a></li>
-            <li><a href="fideicomiso.html">Fideicomiso</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="index.php">Inicio</a></li>
+            <li><a href="quienes.php">Quien soy</a></li>
+            <li><a href="fideicomiso.php">Fideicomiso</a></li>
+            <li><a href="contacto.php">Contacto</a></li>
 
           </ul>
         </div>
         <div class="col-md-4 col-12 ps-3">
           <h5>Oficinas</h5>
           <ul class="lista-footer">
-            <li><a href="cuautitlan.html">Cuautitlán Izcalli</a></li>
-            <li><a href="tlalnepantla.html">Tlalnepantla</a></li>
-            <li><a href="tultitlan.html">Tultitlan</a></li>
-            <li><a href="toluca.html">Toluca</a></li>
+            <li><a href="cuautitlan.php">Cuautitlán Izcalli</a></li>
+            <li><a href="tlalnepantla.php">Tlalnepantla</a></li>
+            <li><a href="tultitlan.php">Tultitlan</a></li>
+            <li><a href="toluca.php">Toluca</a></li>
 
           </ul>
         </div>

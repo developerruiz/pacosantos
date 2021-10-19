@@ -4,10 +4,6 @@
   src: url(../fuente/Exo2-Bold.otf);
 }
 
-* {
-  font-family: Expo2;
-}
-
 body {
   padding-top: 0 !important;
   background: #04498e !important;
@@ -22,19 +18,30 @@ footer {
 }
 
 .img-pacosantos {
+  width: 120px;
   position: fixed;
-  z-index: 99;
-  margin-left: 87%;
-  margin-top: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 80%;
+  left: 90%;
+  z-index: 9;
 }
 
 .img-pacosantos img {
-  width: 125px;
+  width: 100%;
+  height: auto;
 }
 
 img {
   width: 100%;
   height: auto;
+}
+
+.card {
+  padding: 20px;
+  background: none !important;
+  border: none !important;
 }
 
 .logo {
@@ -221,7 +228,8 @@ img {
 }
 
 @media screen and (max-width: 500px) {
-  .texto-banner h1, .texto-banner h2 {
+  .texto-banner h1,
+  .texto-banner h2 {
     font-size: 26px !important;
   }
 }
@@ -505,5 +513,17 @@ img {
 
 #contadores_principal .contador h4 {
   font-family: Expo2 !important;
+}
+
+.card-footer {
+  background: red !important;
+  border-radius: 15px !important;
+}
+
+.card-footer a {
+  color: #fff !important;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */

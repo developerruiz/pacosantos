@@ -1,15 +1,15 @@
-<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">
-      <img src="../img/logo-horizontal.png" alt="" class="logo">
+<header class="d-flex flex-wrap justify-content-center py-3 border-bottom align-items-center background-paco">
+  <a href="index.php" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+    <img src="img/logotipo-pacosantos.png" alt="" width="130">
   </a>
-  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
-  <div class="navbar-nav">
-    <div class="nav-item text-nowrap">
-      <a class="nav-link px-3" href="#">Sign out</a>
-    </div>
-  </div>
-</header>
 
+  <ul class="nav nav-pills">
+    <li class="nav-item"><a href="index.php" class="nav-link active-first active ms-4" aria-current="page">Inicio</a></li>
+    <li class="nav-item"><a href="quienes.php" class="nav-link active-first active ms-4">¿Quién es?</a></li>
+    <li class="nav-item"><a href="fideicomiso.php" class="nav-link active-first active ms-4">Fideicomiso</a></li>
+    <li class="nav-item"><a href="comunicados.php" class="nav-link active-first active ms-4">Comunicados</a></li>
+
+    <!-- <li class="nav-item"><a href="testimoniales.php" class="nav-link disabled">Testimoniales</a></li>
+          <li class="nav-item"><a href="noticias" class="nav-link disabled">Noticias</a></li> -->
+  </ul>
+</header>

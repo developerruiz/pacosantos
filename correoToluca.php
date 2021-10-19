@@ -15,5 +15,5 @@ $mensajeCompleto = $mensaje . "\nAtentamente: " . $nombre . "\nEmail:" . $email;
 mail($destinatario, $mensajeCompleto, $header);
 
 echo "<script>alert('correo enviado exitosamente')</script>";
-echo "<script> setTimeout(\"location.href='enlace.toluca.html'\",1000)</script>";
+echo "<script> setTimeout(\"location.href='enlace.toluca.php'\",1000)</script>";
 ?>

@@ -370,8 +370,8 @@ var codropsEvents = {
 						caldata : codropsEvents,
 						displayWeekAbbr : true
 					} ),
-					$month = $( '#custom-month' ).html( cal.getMonthName() ),
-					$year = $( '#custom-year' ).html( cal.getYear() );
+					$month = $( '#custom-month' ).php( cal.getMonthName() ),
+					$year = $( '#custom-year' ).php( cal.getYear() );
 				$( '#custom-next' ).on( 'click', function() {
 					cal.gotoNextMonth( updateMonthYear );
 				} );
@@ -379,8 +379,8 @@ var codropsEvents = {
 					cal.gotoPreviousMonth( updateMonthYear );
 				} );
 				function updateMonthYear() {				
-					$month.html( cal.getMonthName() );
-					$year.html( cal.getYear() );
+					$month.php( cal.getMonthName() );
+					$year.php( cal.getYear() );
 				}
 				// just an example..
 				function showEvents( $contentEl, dateProperties ) {
@@ -388,7 +388,7 @@ var codropsEvents = {
 					hideEvents();					
 					var $events = $( '<div id="custom-content-reveal" class="custom-content-reveal"><h4>Events for ' + dateProperties.monthname + ' ' + dateProperties.day + ', ' + dateProperties.year + '</h4></div>' ),
 						$close = $( '<span class="custom-content-close"></span>' ).on( 'click', hideEvents );
-					$events.append( $contentEl.html() , $close ).insertAfter( $wrapper );					
+					$events.append( $contentEl.php() , $close ).insertAfter( $wrapper );					
 					setTimeout( function() {
 						$events.css( 'top', '0%' );
 					}, 25 );

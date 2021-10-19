@@ -10,9 +10,9 @@ $azul-claro: #04498e;
     src: url(../fuente/Exo2-Bold.otf);
 }
 
-*{
-    font-family: Expo2;
-}
+// * {
+//     font-family: Expo2;
+// }
 
 body {
     padding-top: 0 !important;
@@ -26,14 +26,20 @@ main,
 footer {
     background: rgb(247, 247, 247);
 }
-.img-pacosantos{
-    position: fixed;
-    z-index: 99;
-    margin-left: 87%;
-    margin-top: 35%;
 
-    img{
-        width: 125px;
+.img-pacosantos {
+    width: 120px;
+    position: fixed;
+    display: flex;
+    // background: #000;
+    top: 80%;
+    left: 90%;
+    z-index: 9;
+
+    img {
+        width: 100%;
+        height: auto;
+
     }
 }
 
@@ -41,6 +47,14 @@ img {
     width: 100%;
     height: auto;
 }
+
+
+.card {
+    padding: 20px;
+    background: none !important;
+    border: none !important;
+}
+
 
 .logo {
     width: 140px;
@@ -114,38 +128,38 @@ img {
 
 
 .bg-amarillo {
-    background: $amarillo-paco!important;
+    background: $amarillo-paco !important;
 }
 
 .bg-rojo {
-    background: $rojo-paco!important;
+    background: $rojo-paco !important;
 }
 
 .bg-azul {
-    background: $azul-claro!important;
+    background: $azul-claro !important;
 }
 
 .bg-azul-obscuro {
-    background: $azul-obscuro-paco!important;
+    background: $azul-obscuro-paco !important;
 }
 
 .color-amarillo {
-    color: $amarillo-paco!important;
+    color: $amarillo-paco !important;
 
 }
 
 .color-rojo {
-    color: $rojo-paco!important;
+    color: $rojo-paco !important;
 
 }
 
 .color-azul {
-    color: $azul-claro!important;
+    color: $azul-claro !important;
 
 }
 
 .color-azul-obscuro {
-    color: $azul-obscuro-paco!important;
+    color: $azul-obscuro-paco !important;
 
 }
 
@@ -186,6 +200,7 @@ img {
     }
 
 }
+
 .banner-fideicomiso {
 
     height: 300px !important;
@@ -242,8 +257,9 @@ img {
 
 @media screen and(max-width:500px) {
 
-    .texto-banner h1, .texto-banner h2 {
-        font-size: 26px!important;
+    .texto-banner h1,
+    .texto-banner h2 {
+        font-size: 26px !important;
     }
 }
 
@@ -492,7 +508,8 @@ img {
 
     }
 }
-.icon-list{
+
+.icon-list {
     list-style: none;
 }
 
@@ -518,13 +535,26 @@ img {
     animation: aparecer 1.3s;
 }
 
-#contadores_principal{
-    .contador{  
-        .contador_cantidad{
+#contadores_principal {
+    .contador {
+        .contador_cantidad {
             font-family: Expo2;
         }
-        h4{
-            font-family: Expo2!important;
+
+        h4 {
+            font-family: Expo2 !important;
         }
+    }
+}
+
+.card-footer {
+    background: red !important;
+    border-radius: 15px!important;
+
+    a {
+        color: #fff !important;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
     }
 }
