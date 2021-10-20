@@ -54,7 +54,7 @@
 
 <body>
   <main class="container">
-    
+
     <?php require 'complementos/header.php'; ?>
 
 
@@ -103,118 +103,115 @@
 
 
         <article class="blog-post">
-          <h2 class="blog-post-title ">COMUNICADOS</h2>
-          
+          <h2 class="blog-post-title m-4 comunicados">COMUNICADOS</h2>
+
           <hr>
 
         </article>
 
 
-     <div class="col-lg-12 d-flex flex-wrap">
-       <div class="col-3 p-3">
-         <div class="card">
-           <div class="card-img">
-             <img src="img/pdf.png" alt="">
-           </div>
-         </div>
-
-         <div class="card-body">
-
-
-         </div>
-
-
-         <div class="card-footer text-center">
-            <a href="comunicados/" download class="descargar">Descargar</a>
-         </div>
-       </div>
-
-
-
-       <div class="col-3 p-3">
-         <div class="card">
-           <div class="card-img">
-             <img src="img/pdf.png" alt="">
-           </div>
-         </div>
-
-         <div class="card-body">
-
-
-         </div>
-
-
-         <div class="card-footer text-center">
-            <a href="comunicados/" download class="descargar">Descargar</a>
-         </div>
-       </div>
+        <div class="col-lg-12 d-flex flex-wrap">
+          <div class="col-3 p-3">
+            <div class="card">
+              <div class="card-img">
+                <img src="img/img-comunicado.jpg" alt="">
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="mb-1 text-muted">
+                Cuautitlán Izcalli, Estado de México, a 5 de octubre de 2021
+              </p>
+            </div>
+            <div class="card-footer text-center d-flex justify-content-center">
+              <a href="" class="me-4">Ver más</a>
+              <a href="comunicados/" download class="descargar"><i class="fas fa-download"></i></a>
+            </div>
+          </div>
 
 
 
-       <div class="col-3 p-3">
-         <div class="card">
-           <div class="card-img">
-             <img src="img/pdf.png" alt="">
-           </div>
-         </div>
-
-         <div class="card-body">
-
-
-         </div>
-
-
-         <div class="card-footer text-center">
-            <a href="comunicados/" download class="descargar">Descargar</a>
-         </div>
-       </div>
-
+          <div class="col-3 p-3">
+            <div class="card">
+              <div class="card-img">
+                <img src="img/img-comunicado.jpg" alt="">
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="mb-1 text-muted">
+                Cuautitlán Izcalli, Estado de México, a 5 de octubre de 2021
+              </p>
+            </div>
+            <div class="card-footer text-center d-flex justify-content-center">
+              <a href="" class="me-4">Ver más</a>
+              <a href="comunicados/" download class="descargar"><i class="fas fa-download"></i></a>
+            </div>
+          </div>
 
 
-       <div class="col-3 p-3">
-         <div class="card">
-           <div class="card-img">
-             <img src="img/pdf.png" alt="">
-           </div>
-         </div>
 
-         <div class="card-body">
-
-
-         </div>
-
-
-         <div class="card-footer text-center">
-            <a href="comunicados/" download class="descargar">Descargar</a>
-         </div>
-       </div>
-
-       <div class="col-3 p-3">
-         <div class="card">
-           <div class="card-img">
-             <img src="img/pdf.png" alt="">
-           </div>
-         </div>
-
-         <div class="card-body">
+          <div class="col-3 p-3">
+            <div class="card">
+              <div class="card-img">
+                <img src="img/img-comunicado.jpg" alt="">
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="mb-1 text-muted">
+              Cuautitlán Izcalli, Estado de México, a 7 de octubre de 2021
+              </p>
+            </div>
+            <div class="card-footer text-center d-flex justify-content-center">
+              <a href="" class="me-4">Ver más</a>
+              <a href="comunicados/" download class="descargar"><i class="fas fa-download"></i></a>
+            </div>
+          </div>
 
 
-         </div>
+
+          <div class="col-3 p-3">
+            <div class="card">
+              <div class="card-img">
+                <img src="img/img-comunicado.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="card-body">
 
 
-         <div class="card-footer text-center">
-            <a href="comunicados/" download class="descargar">Descargar</a>
-         </div>
-       </div>
+            </div>
 
-     </div>
+
+            <div class="card-footer text-center">
+              <a href="comunicados/" download class="descargar">Descargar</a>
+            </div>
+          </div>
+
+          <div class="col-3 p-3">
+            <div class="card">
+              <div class="card-img">
+                <img src="img/img-comunicado.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="card-body">
+
+
+            </div>
+
+
+            <div class="card-footer text-center">
+              <a href="comunicados/" download class="descargar">Descargar</a>
+            </div>
+          </div>
+
+        </div>
 
 
       </div>
-  
+
       <!-- TODO: HACER UNA COMPLEMENTO DE COLUMNA  -->
       <!-- AQUI VA LA COLUMNA DE MENU DESPLEGABLE DE OFICINAS Y FORMULARIO -->
-      
+
     </div>
 
   </main>
