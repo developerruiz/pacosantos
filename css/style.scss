@@ -10,9 +10,9 @@ $azul-claro: #04498e;
     src: url(../fuente/Exo2-Bold.otf);
 }
 
-// * {
-//     font-family: Expo2;
-// }
+.font-paco{
+    font-family: Expo2!important;
+}
 
 body {
     padding-top: 0 !important;
@@ -22,6 +22,10 @@ body {
     background-attachment: fixed !important;
 }
 
+.halloween{
+  
+    background: #38002f !important;
+}
 main,
 footer {
     background: rgb(247, 247, 247);
@@ -167,12 +171,39 @@ img {
     border: none !important;
 }
 
+.nav-link{
+    color: $azul-claro!important;
+    font-weight: bold;
+    font-family: Expo2;
+    font-size: 16px;
+    a{
+        text-decoration: none!important;
+    }
+}
+
 // BANNER
 .banner-gral {
     height: 300px !important;
     background: url(../img/oficina2.jpeg) !important;
     background-size: cover !important;
     background-position: center !important;
+    background-repeat: no-repeat !important;
+
+    &::after {
+        content: "";
+        background: rgba(0, 0, 0, 0.5);
+        width: 100vw;
+        height: 100%;
+    }
+
+}
+
+.banner-comunicado {
+
+    height: 300px !important;
+    background: url(../img/img-comunicado.jpg) !important;
+    background-size: auto !important;
+    background-position: center center!important;
     background-repeat: no-repeat !important;
 
     &::after {
@@ -218,12 +249,36 @@ img {
 
 }
 
+.banner-concurso {
+
+    height: 410px !important;
+    background: url(../img/Feliz-día-de-muertos.jpg) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+
+    &::after {
+        content: "";
+        // background: rgba(0, 0, 0, 0.5);
+        width: 100vw;
+        height: 100%;
+    }
+
+}
+@media(max-width:500px){
+    .banner-concurso{
+        background-size: 100%!important;
+        height: 180px!important;
+    }
+}
+
 .background-paco {
     background-image: url(../img/index-header-paco.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right center;
     width: 100%;
+    
 }
 
 @media screen and(max-width: 600px) {
@@ -436,6 +491,15 @@ img {
     -o-transition: .2s ease-in;
 }
 
+.card-title h5{
+    font-size: 17px;
+    font-family: Expo2;
+}
+
+p.card-text{
+    font-size: 14px;
+}
+
 .lista-redes-sociales {
     list-style: none;
 
@@ -551,14 +615,75 @@ img {
     border-left: 8px solid #c11631!important;
 }
 
-// .card-footer {
-//     background: red !important;
-//     border-radius: 15px!important;
+.icono-comunicados{
+    position: fixed;
+    top: 90%;
+    left: 3%!important;
+    i{
+        font-size: 3.5rem;
+        color: #ffdd0e;
+        &:hover{
+        color: #d4ba0c;
 
-//     a {
-//         color: #fff !important;
-//         text-decoration: none;
-//         width: 100%;
-//         height: 100%;
-//     }
-// }
+        }
+    }
+}
+
+// CONCURSO
+
+.img-calaverita{
+    width: 300px;
+    margin: 0 auto;
+    animation: rotar 5s infinite;
+}
+.background-form{
+    border-radius: 15px;
+    background: #38002f;
+
+    label{
+        color: #a446b1;   
+    }
+
+    button{
+        background: #ff8400!important;
+        color: #38002f!important;
+    }
+
+    input[type="text"], input[type="tel"],input[type="number"],input[type="email"]{
+        background: none;
+        color: #ff8400;
+        border: none;
+        border-bottom: 2px solid #ff8400!important;
+        border-radius: 0!important;
+        &:focus{
+            box-shadow: none;
+        }
+    }
+    input[type="file"]{
+        color: #a446b1;   
+        text-decoration: underline;
+    }
+}
+@keyframes rotar {
+
+    0%{
+        transform: rotar(0);
+    }
+    25%{
+        transform: rotate(10deg);
+    }
+   
+    35%{
+        transform: rotate(0);
+    }
+    45%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(0);
+    }
+
+}

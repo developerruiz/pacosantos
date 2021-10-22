@@ -4,12 +4,20 @@
   src: url(../fuente/Exo2-Bold.otf);
 }
 
+.font-paco {
+  font-family: Expo2 !important;
+}
+
 body {
   padding-top: 0 !important;
   background: #04498e !important;
   background-image: url(../img/Sin-título-1.jpg) !important;
   background-size: 50% !important;
   background-attachment: fixed !important;
+}
+
+.halloween {
+  background: #38002f !important;
 }
 
 main,
@@ -145,6 +153,17 @@ img {
   border: none !important;
 }
 
+.nav-link {
+  color: #04498e !important;
+  font-weight: bold;
+  font-family: Expo2;
+  font-size: 16px;
+}
+
+.nav-link a {
+  text-decoration: none !important;
+}
+
 .banner-gral {
   height: 300px !important;
   background: url(../img/oficina2.jpeg) !important;
@@ -154,6 +173,21 @@ img {
 }
 
 .banner-gral::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100%;
+}
+
+.banner-comunicado {
+  height: 300px !important;
+  background: url(../img/img-comunicado.jpg) !important;
+  background-size: auto !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+.banner-comunicado::after {
   content: "";
   background: rgba(0, 0, 0, 0.5);
   width: 100vw;
@@ -188,6 +222,27 @@ img {
   background: rgba(0, 0, 0, 0.5);
   width: 100vw;
   height: 100%;
+}
+
+.banner-concurso {
+  height: 410px !important;
+  background: url(../img/Feliz-día-de-muertos.jpg) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.banner-concurso::after {
+  content: "";
+  width: 100vw;
+  height: 100%;
+}
+
+@media (max-width: 500px) {
+  .banner-concurso {
+    background-size: 100% !important;
+    height: 180px !important;
+  }
 }
 
 .background-paco {
@@ -398,6 +453,15 @@ img {
   -o-transition: .2s ease-in;
 }
 
+.card-title h5 {
+  font-size: 17px;
+  font-family: Expo2;
+}
+
+p.card-text {
+  font-size: 14px;
+}
+
 .lista-redes-sociales {
   list-style: none;
 }
@@ -517,5 +581,113 @@ img {
 
 .comunicados::before {
   border-left: 8px solid #c11631 !important;
+}
+
+.icono-comunicados {
+  position: fixed;
+  top: 90%;
+  left: 3% !important;
+}
+
+.icono-comunicados i {
+  font-size: 3.5rem;
+  color: #ffdd0e;
+}
+
+.icono-comunicados i:hover {
+  color: #d4ba0c;
+}
+
+.img-calaverita {
+  width: 300px;
+  margin: 0 auto;
+  -webkit-animation: rotar 5s infinite;
+          animation: rotar 5s infinite;
+}
+
+.background-form {
+  border-radius: 15px;
+  background: #38002f;
+}
+
+.background-form label {
+  color: #a446b1;
+}
+
+.background-form button {
+  background: #ff8400 !important;
+  color: #38002f !important;
+}
+
+.background-form input[type="text"], .background-form input[type="tel"], .background-form input[type="number"], .background-form input[type="email"] {
+  background: none;
+  color: #ff8400;
+  border: none;
+  border-bottom: 2px solid #ff8400 !important;
+  border-radius: 0 !important;
+}
+
+.background-form input[type="text"]:focus, .background-form input[type="tel"]:focus, .background-form input[type="number"]:focus, .background-form input[type="email"]:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.background-form input[type="file"] {
+  color: #a446b1;
+  text-decoration: underline;
+}
+
+@-webkit-keyframes rotar {
+  0% {
+    -webkit-transform: rotar(0);
+            transform: rotar(0);
+  }
+  25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  35% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  45% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes rotar {
+  0% {
+    -webkit-transform: rotar(0);
+            transform: rotar(0);
+  }
+  25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  35% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  45% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
 }
 /*# sourceMappingURL=style.css.map */

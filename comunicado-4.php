@@ -56,12 +56,10 @@
   <main class="container">
 
     <?php require 'complementos/header.php'; ?>
-
-
     <?php require 'complementos/submenu.php'; ?>
 
 
-    <div class="mb-4 text-white rounded bg-dark align-items-center d-flex banner-quienes">
+    <div class="mb-4 text-white rounded bg-dark align-items-center d-flex banner-comunicado">
       <!-- <div class="col-md-6 px-0 "> -->
       <!-- <h1 class="display-4 fst-italic">Soy Paco Santos</h1> -->
       <!-- <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p> -->
@@ -78,8 +76,8 @@
         </h3> -->
 
 
-        <article class="blog-post" id="comunicados_principal">
-          <h2 class="blog-post-title m-4 comunicados">COMUNICADOS</h2>
+        <article class="blog-post">
+          <h2 class="blog-post-title m-4 comunicados font-paco">COMUNICADO 4</h2>
 
           <hr>
 
@@ -87,125 +85,69 @@
 
 
         <div class="col-lg-12 d-flex flex-wrap">
-          <div class="col-lg-3 col-12 col-md-4 p-3">
-            <div class="card">
-              <div class="card-img">
-                <img src="img/img-comunicado.jpg" alt="">
-              </div>
-            </div>
-            <div class="card-body">
-              <p class="mb-1 text-muted">
-                Cuautitlán Izcalli, Estado de México, a 5 de octubre de 2021
-              </p>
-            </div>
-            <div class="card-footer text-center d-flex justify-content-center">
-              <a href="comunicado-1.php" class="me-4">Ver más</a>
-              <a href="docs/boletin-1.pdf" download class="descargar"><i class="fas fa-download"></i></a>
-            </div>
+          <div class="col-lg-12 m-0 p-0">
+            <a href="comunicados.php#comunicados_principal" class="icono-comunicados">
+              <i class="far fa-caret-square-left"></i>
+            </a>
           </div>
 
-
-
-          <div class="col-lg-3 col-12 col-md-4 p-3">
-            <div class="card">
-              <div class="card-img">
-                <img src="img/img-comunicado.jpg" alt="">
-              </div>
-            </div>
-            <div class="card-body">
-              <p class="mb-1 text-muted">
-                Cuautitlán Izcalli, Estado de México, a 5 de octubre de 2021
-              </p>
-            </div>
-            <div class="card-footer text-center d-flex justify-content-center">
-            <a href="comunicado-2.php" class="me-4">Ver más</a>
-              <a href="docs/boletin-2.pdf" download class="descargar"><i class="fas fa-download"></i></a>
-            </div>
+          <div class="col-lg-4 col-12 p-4">
+          <img src="img/img-comunicado4-1.jpeg" alt="">              
+            
           </div>
-
-
-          <div class="col-lg-3 col-12 col-md-4 p-3">
-            <div class="card">
-              <div class="card-img">
-                <img src="img/img-comunicado.jpg" alt="">
-              </div>
+          <div class="col-lg-8 col-12 p-4">
+            <div>
+              <h5 class="font-paco">El diputado Paco Santos hace un llamado para
+                trabajar unidos Secretaría de Finanzas y la LXI
+                Legislatura para una disciplia fiscal y
+                responsabilidad hacendaria.</h5>
             </div>
-            <div class="card-body">
-              <p class="mb-1 text-muted">
-                Cuautitlán Izcalli, Estado de México, a 7 de octubre de 2021
-              </p>
-            </div>
-            <div class="card-footer text-center d-flex justify-content-center">
-              <a href="comunicado-3.php" class="me-4">Ver más</a>
-              <a href="docs/boletin-3.pdf" download class="descargar"><i class="fas fa-download"></i></a>
-            </div>
-          </div>
+            <br><br>
+            <div>
 
-
-          <div class="col-lg-3 col-12 col-md-4 p-3">
-            <div class="card">
-              <div class="card-img">
-                <img src="img/img-comunicado.jpg" alt="">
-              </div>
-            </div>
-
-            <div class="card-body">
-              <p class="mb-1 text-muted">
-                Toluca de Lerdo, Estado de México, a 13 de octubre de 2021
-              </p>
-            </div>
-
-
-           <div class="card-footer text-center d-flex justify-content-center">
-            <a href="comunicado-4.php" class="me-4">Ver más</a>
-              <a href="docs/boletin-4.pdf" download class="descargar"><i class="fas fa-download"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-12 col-md-4 p-3">
-            <div class="card">
-              <div class="card-img">
-                <img src="img/img-comunicado.jpg" alt="">
-              </div>
-            </div>
-
-            <div class="card-body">
-              <p class="mb-1 text-muted">
-                Tlalnepantla de Baz, Estado de México, a 15 de octubre de 2021
+              <p>
+                Dando continuidad a los ejercicios de glosa con motivo del cuarto informe de gobierno
+                del mandatario estatal Alfredo del Mazo, la mañana de este miércoles 13 de octubre,
+                la LXI Legislatura recibió al Secretario de Finanzas, Rodrigo Jarque Lira quien
+                compareció en el congreso.
               </p>
 
-            </div>
 
-
-           <div class="card-footer text-center d-flex justify-content-center">
-            <a href="comunicado-5.php" class="me-4">Ver más</a>
-              <a href="docs/boletin-5.pdf" download class="descargar"><i class="fas fa-download"></i></a>
             </div>
           </div>
+          <hr>
+          <div class="col-lg-12 col-12 p-4">
+            <p>
+              El diputado local del distrito 26 Francisco Santos Arreola, reconoció el trabajo que se
+              ha realizado para obtener buenos resultados, a pesar de las adversidades que
+              ocasionó la pandemia, esto luego de que Jarque aseguró que los recursos estatales
+              han sido manejados responsablemente.</p>
 
+            <p>En su comparecencia el Secretario informó que se han adquirido recursos para las
+              arcas estatales mediante la recaudación, con un importante aumento en los recursos
+              propios, los cuales han sido utilizados de forma adecuada a partir de la
+              implementación de políticas públicas fiscales que han dado estabilidad financiera. </p>
 
-          <div class="col-lg-3 col-12 col-md-4 p-3">
-            <div class="card">
+            <p>
+              Paco Santos destacó que en este período legislativo se trabajará en un marco legal
+              para tener finanzas sanas, con una disciplina fiscal y responsabilidad hacendaria, por
+              lo que solicitó respetuosamente al Secretario y diputados a trabajar unidos con la
+              finalidad de garantizar la calidad de vida de las y los mexiquenses.
+            </p>
+
+          </div>
+          <div class="col-lg-12 d-flex flex-wrap">
+            <div class="card col-12 col-lg-4">
               <div class="card-img">
-                <img src="img/img-comunicado.jpg" alt="">
+                <img src="img/img-comunicado4-2.jpeg" alt="">              
               </div>
             </div>
-
-            <div class="card-body">
-              <p class="mb-1 text-muted">
-                Cuautitlán Izcalli, Estado de México, a 18 de octubre de 2021
-              </p>
-
-            </div>
-
-
-           <div class="card-footer text-center d-flex justify-content-center">
-            <a href="comunicado-6.php" class="me-4">Ver más</a>
-              <a href="docs/boletin-6.pdf" download class="descargar"><i class="fas fa-download"></i></a>
+            <div class="card col-12 col-lg-4">
+              <div class="card-img">
+                <img src="img/img-comunicado4-3.jpeg" alt="">              
+              </div>
             </div>
           </div>
-
-
 
         </div>
 

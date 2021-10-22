@@ -56,12 +56,10 @@
   <main class="container">
 
     <?php require 'complementos/header.php'; ?>
-
-
     <?php require 'complementos/submenu.php'; ?>
 
 
-    <div class="mb-4 text-white rounded bg-dark align-items-center d-flex banner-quienes">
+    <div class="mb-4 text-white rounded bg-dark align-items-center d-flex banner-comunicado">
       <!-- <div class="col-md-6 px-0 "> -->
       <!-- <h1 class="display-4 fst-italic">Soy Paco Santos</h1> -->
       <!-- <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p> -->
@@ -78,8 +76,8 @@
         </h3> -->
 
 
-        <article class="blog-post" id="comunicados_principal">
-          <h2 class="blog-post-title m-4 comunicados">COMUNICADOS</h2>
+        <article class="blog-post">
+          <h2 class="blog-post-title m-4 comunicados font-paco">COMUNICADO 1</h2>
 
           <hr>
 
@@ -87,125 +85,53 @@
 
 
         <div class="col-lg-12 d-flex flex-wrap">
-          <div class="col-lg-3 col-12 col-md-4 p-3">
-            <div class="card">
-              <div class="card-img">
-                <img src="img/img-comunicado.jpg" alt="">
-              </div>
-            </div>
-            <div class="card-body">
-              <p class="mb-1 text-muted">
-                Cuautitlán Izcalli, Estado de México, a 5 de octubre de 2021
-              </p>
-            </div>
-            <div class="card-footer text-center d-flex justify-content-center">
-              <a href="comunicado-1.php" class="me-4">Ver más</a>
-              <a href="docs/boletin-1.pdf" download class="descargar"><i class="fas fa-download"></i></a>
-            </div>
+        <div class="col-lg-12 m-0 p-0">
+           <a href="comunicados.php#comunicados_principal" class="icono-comunicados">
+              <i class="far fa-caret-square-left"></i>
+            </a>
           </div>
 
-
-
-          <div class="col-lg-3 col-12 col-md-4 p-3">
-            <div class="card">
-              <div class="card-img">
-                <img src="img/img-comunicado.jpg" alt="">
-              </div>
+          <div class="col-lg-4 col-12 p-4">
+            <img src="img/img-comunicado-1.jpeg" alt="">
+          </div>
+          <div class="col-lg-8 col-12 p-4">
+            <div>
+              <h5 class="font-paco">Francisco Javier Santos Arreola es nombrado
+                Presidente de la Comisión Legislativa de Finanzas
+                Públicas de la H. LXI Legislatura del Estado de
+                México.</h5>
             </div>
-            <div class="card-body">
-              <p class="mb-1 text-muted">
-                Cuautitlán Izcalli, Estado de México, a 5 de octubre de 2021
-              </p>
-            </div>
-            <div class="card-footer text-center d-flex justify-content-center">
-            <a href="comunicado-2.php" class="me-4">Ver más</a>
-              <a href="docs/boletin-2.pdf" download class="descargar"><i class="fas fa-download"></i></a>
+            <br><br>
+            <div>
+              <h5 class="font-paco">
+                Francisco Javier Santos Arreola, diputado local
+                del Distrito 26, fungirá como Presidente de la
+                Comisión Legislativa de Finanzas Públicas de la H.
+                LXI Legislatura del Estado de México
+              </h5>
             </div>
           </div>
+          <hr>
+          <div class="col-lg-12 col-12 p-4">
 
+            <p>l día de hoy en sesión legislativa en donde se aprobó el reparto de comisiones de la
+              61 Legislatura del Estado de México, fue electo Presidente de la Comisión de
+              Finanzas Públicas, el diputado por el distrito 26 Francisco Javier Santos Arreola.</p>
+            <p>
+              Esta Comisión será la encargada de establecer un mecanismo que permita saber a
+              los mexiquenses el estado financiero del Estado y de los 125 municipios que lo
+              conforman, dando seguimiento a cada peso que ingresa hasta llegar a su destino,
+              como política pública, programa o servicio, teniendo la transparencia de las finanzas
+              públicas como premisa. </p>
 
-          <div class="col-lg-3 col-12 col-md-4 p-3">
-            <div class="card">
-              <div class="card-img">
-                <img src="img/img-comunicado.jpg" alt="">
-              </div>
-            </div>
-            <div class="card-body">
-              <p class="mb-1 text-muted">
-                Cuautitlán Izcalli, Estado de México, a 7 de octubre de 2021
-              </p>
-            </div>
-            <div class="card-footer text-center d-flex justify-content-center">
-              <a href="comunicado-3.php" class="me-4">Ver más</a>
-              <a href="docs/boletin-3.pdf" download class="descargar"><i class="fas fa-download"></i></a>
-            </div>
+            <p>El nombramiento de Francisco Santos Arreola como Presidente de la Comisión de
+              Finanzas Públicas de la H. LXI Legislatura del Estado de México, permitirá destinar
+              importantes recursos públicos para el desarrollo del Estado y el beneficio de la
+              población. Dentro de sus objetivos está el promover una supervisión efectiva y
+              consistente en materia de deuda pública del Estado y municipios, siendo sensible a la
+              voz de los ciudadanos a su necesidades que requieren para elevar su calidad de vida.</p>
+
           </div>
-
-
-          <div class="col-lg-3 col-12 col-md-4 p-3">
-            <div class="card">
-              <div class="card-img">
-                <img src="img/img-comunicado.jpg" alt="">
-              </div>
-            </div>
-
-            <div class="card-body">
-              <p class="mb-1 text-muted">
-                Toluca de Lerdo, Estado de México, a 13 de octubre de 2021
-              </p>
-            </div>
-
-
-           <div class="card-footer text-center d-flex justify-content-center">
-            <a href="comunicado-4.php" class="me-4">Ver más</a>
-              <a href="docs/boletin-4.pdf" download class="descargar"><i class="fas fa-download"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-12 col-md-4 p-3">
-            <div class="card">
-              <div class="card-img">
-                <img src="img/img-comunicado.jpg" alt="">
-              </div>
-            </div>
-
-            <div class="card-body">
-              <p class="mb-1 text-muted">
-                Tlalnepantla de Baz, Estado de México, a 15 de octubre de 2021
-              </p>
-
-            </div>
-
-
-           <div class="card-footer text-center d-flex justify-content-center">
-            <a href="comunicado-5.php" class="me-4">Ver más</a>
-              <a href="docs/boletin-5.pdf" download class="descargar"><i class="fas fa-download"></i></a>
-            </div>
-          </div>
-
-
-          <div class="col-lg-3 col-12 col-md-4 p-3">
-            <div class="card">
-              <div class="card-img">
-                <img src="img/img-comunicado.jpg" alt="">
-              </div>
-            </div>
-
-            <div class="card-body">
-              <p class="mb-1 text-muted">
-                Cuautitlán Izcalli, Estado de México, a 18 de octubre de 2021
-              </p>
-
-            </div>
-
-
-           <div class="card-footer text-center d-flex justify-content-center">
-            <a href="comunicado-6.php" class="me-4">Ver más</a>
-              <a href="docs/boletin-6.pdf" download class="descargar"><i class="fas fa-download"></i></a>
-            </div>
-          </div>
-
-
 
         </div>
 

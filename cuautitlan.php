@@ -63,32 +63,8 @@
     <?php require 'complementos/header.php'; ?>
 
 
+    <?php require 'complementos/submenu.php'; ?>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded gradient" aria-label="Twelfth navbar example">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10"
-          aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link submenu-active" aria-current="page" href="cuautitlan.php">Cuautitlán Izcalli</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tlalnepantla.php">Tlalnepantla</a>
-            </li>
-            <li class="nav-item">
-              <a href="tultitlan.php" class="nav-link">Tultitlán</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="toluca.php">Toluca</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
     <div class="mb-4  text-white rounded bg-dark align-items-center d-flex banner-gral">
       <!-- <div class="col-md-6 px-0 ">
@@ -138,7 +114,7 @@
 
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
                 <div class="col">
-            <a href="empoderamiento-mujer-c.php">
+          
                     <div class="card shadow-sm">
                       <div class="card-img">
                         <img src="img/empoderamiento.png" alt="">
@@ -160,7 +136,7 @@
                         </div>
                       </div>
                     </div>
-            </a>
+         
                 </div>
 
                 <div class="col">

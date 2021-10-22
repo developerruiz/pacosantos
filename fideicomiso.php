@@ -55,46 +55,12 @@
 <body>
   <main class="container">
     
-      <header class="d-flex flex-wrap justify-content-center py-3 border-bottom align-items-center background-paco">
-        <a href="index.php" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-          <img src="img/logotipo-pacosantos.png" alt="" width="130">
-        </a>
+  <?php require 'complementos/header.php'; ?>
 
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="index.php" class="nav-link " aria-current="page">Inicio</a></li>
-          <li class="nav-item"><a href="quienes.php" class="nav-link">¿Quién es?</a></li>
-          <li class="nav-item"><a href="fideicomiso.php" class="nav-link active-first active">Fideicomiso</a></li>
-          <!-- <li class="nav-item"><a href="testimoniales.php" class="nav-link disabled">Testimoniales</a></li>
-          <li class="nav-item"><a href="noticias" class="nav-link disabled">Noticias</a></li> -->
-        </ul>
-      </header>
     
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded gradient" aria-label="Twelfth navbar example">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10"
-          aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <?php require 'complementos/submenu.php'; ?>
 
-        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="cuautitlan.php">Cuautitlán Izcalli</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tlalnepantla.php">Tlalnepantla</a>
-            </li>
-            <li class="nav-item">
-              <a href="tultitlan.php" class="nav-link">Tultitlán</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="toluca.php">Toluca</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
     <div class="mb-4 text-white rounded bg-dark align-items-center d-flex banner-fideicomiso">
           
