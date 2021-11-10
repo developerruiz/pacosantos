@@ -115,7 +115,7 @@
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
                 <div class="col">
           
-                    <div class="card shadow-sm">
+                    <a href="empoderamiento-mujer-c.php" class="card shadow-sm">
                       <div class="card-img">
                         <img src="img/empoderamiento.png" alt="">
                       </div>
@@ -135,7 +135,7 @@
                           <!-- <small class="text-muted">9 mins</small> -->
                         </div>
                       </div>
-                    </div>
+                    </a>
          
                 </div>
 

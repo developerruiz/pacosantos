@@ -118,7 +118,7 @@
               </p>
             </div>
             <div class="card-footer text-center d-flex justify-content-center">
-            <a href="comunicado-2.php" class="me-4">Ver más</a>
+              <a href="comunicado-2.php" class="me-4">Ver más</a>
               <a href="docs/boletin-2.pdf" download class="descargar"><i class="fas fa-download"></i></a>
             </div>
           </div>
@@ -156,8 +156,8 @@
             </div>
 
 
-           <div class="card-footer text-center d-flex justify-content-center">
-            <a href="comunicado-4.php" class="me-4">Ver más</a>
+            <div class="card-footer text-center d-flex justify-content-center">
+              <a href="comunicado-4.php" class="me-4">Ver más</a>
               <a href="docs/boletin-4.pdf" download class="descargar"><i class="fas fa-download"></i></a>
             </div>
           </div>
@@ -177,8 +177,8 @@
             </div>
 
 
-           <div class="card-footer text-center d-flex justify-content-center">
-            <a href="comunicado-5.php" class="me-4">Ver más</a>
+            <div class="card-footer text-center d-flex justify-content-center">
+              <a href="comunicado-5.php" class="me-4">Ver más</a>
               <a href="docs/boletin-5.pdf" download class="descargar"><i class="fas fa-download"></i></a>
             </div>
           </div>
@@ -199,17 +199,35 @@
             </div>
 
 
-           <div class="card-footer text-center d-flex justify-content-center">
-            <a href="comunicado-6.php" class="me-4">Ver más</a>
+            <div class="card-footer text-center d-flex justify-content-center">
+              <a href="comunicado-6.php" class="me-4">Ver más</a>
               <a href="docs/boletin-6.pdf" download class="descargar"><i class="fas fa-download"></i></a>
             </div>
           </div>
 
 
+          <!-- boletin #7 -->
+
+          <div class="col-lg-3 col-12 col-md-4 p-3">
+            <div class="card">
+              <div class="card-img">
+                <img src="img/img-comunicado.jpg" alt="">
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="mb-1 text-muted">
+              Toluca de Lerdo, Estado de México, a 26 de octubre de 2021 
+              </p>
+            </div>
+            <div class="card-footer text-center d-flex justify-content-center">
+              <a href="comunicado-7.php" class="me-4">Ver más</a>
+              <a href="docs/boletin-7.pdf" download class="descargar"><i class="fas fa-download"></i></a>
+            </div>
+          </div>
+
+          <!-- fin boletin #7 -->
 
         </div>
-
-
       </div>
 
       <!-- TODO: HACER UNA COMPLEMENTO DE COLUMNA  -->

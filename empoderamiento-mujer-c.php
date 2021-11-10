@@ -1,3 +1,7 @@
+<?php 
+  include ("conexion.php");
+  $evento="SELECT * FROM tb_regevento";  
+  ?>
 <!doctype html>
 <html lang="en">
 
@@ -59,9 +63,9 @@
 <body>
 
     <div class="img-pacosantos">
-        
-            <img src="img/carita3.png" alt="">
-        
+
+        <img src="img/carita3.png" alt="">
+
     </div>
 
     <main class="container">
@@ -128,19 +132,67 @@
 
                 <article class="blog-post">
                     <h2 class="blog-post-title mb-4">
-                        OFICINA DE ENLACE CON LA DIPUTACIÓN DEL DISTRITO XXVI CUAUTITLÁN IZCALLI
+                        EMPODERAMIENTO DE LA MUJER
                     </h2>
                     <hr>
                 </article>
 
+                <div class="my-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, modi autem consequatur iste neque unde
+                    aut aperiam. Voluptatem ex sit ea perferendis eius. Cumque consequuntur perspiciatis neque
+                    assumenda, officia error fugit quam minima dignissimos, aliquam sequi aliquid. Magni ab officia
+                    autem vitae ducimus quisquam ea soluta dignissimos culpa accusamus non, beatae perspiciatis
+                    quibusdam quod quaerat amet excepturi recusandae inventore explicabo error et corrupti eaque!
+                    Eveniet reprehenderit eaque neque! Accusamus odio, tenetur minima hic vitae modi facere iure?
+                    Suscipit doloribus debitis temporibus dignissimos, facilis neque deleniti, quo provident, corrupti
+                    nisi culpa illum. Alias nulla quae eveniet doloribus molestias odio assumenda ea!
+                </div>
+
+
+
+                <div class="table-responsive">
+                    <table class="table table-striped table-sm">
+                        <thead>
+
+                        </thead>
+                        <tbody>
+
+                            <?php  $resultado = mysqli_query($conexion, $evento);
+                                    while ($row=mysqli_fetch_assoc($resultado)) { ?>
+                            <!-- <tr>
+                                <td>Nombre del evento</td>
+                                <td>Descipcion</td>
+                            </tr> -->
+                            <tr class="bg-none">
+                                 <td><?php echo $row['nomEvento']; ?></td>
+                                 <td rowspan="2"><?php echo $row['desEvento']?></td>
+                            </tr>
+
+                            <tr class="bg-none">
+                                 <td rowspan="2"><?php echo $row['fecha']; ?></td>
+                            </tr>
+
+                            <tr class="bg-none">
+                                 <td colspan="3"><i class="fas fa-map-marker-alt"></i> <?php echo $row['ubicacion']; ?></td>
+                            </tr>
+<tr>
+    
+                                <td colspan="2">
+                                    <a href="det_evento.php?id=<?php echo $row['id_evento'];?>" class="">Ver más</a>
+                                </td>
+</tr>
+
+                            <?php } mysqli_free_result($resultado)?>
+
+                        </tbody>
+                    </table>
+                </div>
+                <br>
 
 
 
 
 
-              
-
-            
 
 
             </div>
