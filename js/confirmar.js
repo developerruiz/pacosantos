@@ -9,3 +9,4 @@ let btnEliminar =  document.querySelectorAll('.item-delete');
 for(var i=0; i < btnEliminar.length; i++){
     btnEliminar[i].addEventListener('click', confirmacion);
 }
+

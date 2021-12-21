@@ -217,32 +217,6 @@
           </div>
 
 
-          <form class="row g-3" action="correoToluca.php" method="POST">
-            <div class="col-md-12 ">
-              <label for="inputNombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="inputNombre" name="nombre">
-            </div>
-            <div class="col-md-12">
-              <label for="inputEmail" class="form-label">Correo electrónico</label>
-              <input type="email" class="form-control" id="inputEmail" name="email">
-            </div>
-            <div class="col-md-12">
-              <label for="inputTelefono" class="form-label">Teléfono</label>
-              <input type="number" class="form-control" id="inputTelefono" name="telefono">
-            </div>
-            <div class="col-md-12">
-              <label for="inputMensaje" class="form-label">Mensaje</label>
-              <textarea cols=10 rows="10" type="number" class="form-control" id="inputMensaje" name="mensaje"></textarea>
-            </div>
-            
-            <div class="col-12 mb-4">
-              <button type="submit" class="btn btn-primary btn-lg">Enviar</button> 
-            </div>
-       
-          </form>
-
-
-
         </div>
       </div>
     </div>

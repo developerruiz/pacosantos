@@ -77,7 +77,7 @@
 
 
         <article class="blog-post" id="comunicados_principal">
-          <h2 class="blog-post-title m-4 comunicados font-paco">COMUNICADO 6</h2>
+          <h2 class="blog-post-title m-4 comunicados  ">COMUNICADO 6</h2>
 
           <hr>
 
@@ -97,7 +97,7 @@
           </div>
           <div class="col-lg-8 col-12 p-4">
             <div>
-              <h5 class="font-paco">“El impulso a la activación física se convertirá en
+              <h5 class=" ">“El impulso a la activación física se convertirá en
                 piedra angular de las escuelas que comprenden el
                 distrito 26”, afirmó Paco Santos Diputado Local
                 del mismo. </h5>
@@ -191,11 +191,12 @@
         <div class="col-md-4 col-12 ps-3">
           <h5>Oficinas</h5>
           <ul class="lista-footer">
+
             <li><a href="cuautitlan.php">Cuautitlán Izcalli</a></li>
             <li><a href="tlalnepantla.php">Tlalnepantla</a></li>
             <li><a href="tultitlan.php">Tultitlan</a></li>
             <li><a href="toluca.php">Toluca</a></li>
-
+            
           </ul>
         </div>
       </div>

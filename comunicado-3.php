@@ -77,7 +77,7 @@
 
 
         <article class="blog-post">
-          <h2 class="blog-post-title m-4 comunicados font-paco">COMUNICADO 3</h2>
+          <h2 class="blog-post-title m-4 comunicados  ">COMUNICADO 3</h2>
 
           <hr>
 
@@ -97,7 +97,7 @@
           </div>
           <div class="col-lg-8 col-12 p-4">
             <div>
-              <h5 class="font-paco">Paco Santos diputado local por el Distrito 26,
+              <h5 class=" ">Paco Santos diputado local por el Distrito 26,
                 presenta su primera Ley en la Legislatura del
                 Estado de México.</h5>
             </div>

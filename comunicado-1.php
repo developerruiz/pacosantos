@@ -60,24 +60,14 @@
 
 
     <div class="mb-4 text-white rounded bg-dark align-items-center d-flex banner-comunicado">
-      <!-- <div class="col-md-6 px-0 "> -->
-      <!-- <h1 class="display-4 fst-italic">Soy Paco Santos</h1> -->
-      <!-- <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p> -->
-      <!-- <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p> -->
-      <!-- </div> -->
     </div>
 
 
     <div class="row g-5">
       <div class="col-md-12">
-        <!-- <h3 class="pb-4 mb-4 fst-italic border-bottom">
-          Gumen Manos Unidas
-          
-        </h3> -->
-
 
         <article class="blog-post">
-          <h2 class="blog-post-title m-4 comunicados font-paco">COMUNICADO 1</h2>
+          <h2 class="blog-post-title m-4 comunicados  ">COMUNICADO 1</h2>
 
           <hr>
 
@@ -96,14 +86,14 @@
           </div>
           <div class="col-lg-8 col-12 p-4">
             <div>
-              <h5 class="font-paco">Francisco Javier Santos Arreola es nombrado
+              <h5 class=" ">Francisco Javier Santos Arreola es nombrado
                 Presidente de la Comisión Legislativa de Finanzas
                 Públicas de la H. LXI Legislatura del Estado de
                 México.</h5>
             </div>
             <br><br>
             <div>
-              <h5 class="font-paco">
+              <h5 class=" ">
                 Francisco Javier Santos Arreola, diputado local
                 del Distrito 26, fungirá como Presidente de la
                 Comisión Legislativa de Finanzas Públicas de la H.

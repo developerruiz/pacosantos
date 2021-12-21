@@ -77,7 +77,7 @@
 
 
         <article class="blog-post">
-          <h2 class="blog-post-title m-4 comunicados font-paco">COMUNICADO 4</h2>
+          <h2 class="blog-post-title m-4 comunicados  ">COMUNICADO 4</h2>
 
           <hr>
 
@@ -97,7 +97,7 @@
           </div>
           <div class="col-lg-8 col-12 p-4">
             <div>
-              <h5 class="font-paco">El diputado Paco Santos hace un llamado para
+              <h5 class=" ">El diputado Paco Santos hace un llamado para
                 trabajar unidos Secretaría de Finanzas y la LXI
                 Legislatura para una disciplia fiscal y
                 responsabilidad hacendaria.</h5>

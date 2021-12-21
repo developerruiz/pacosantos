@@ -32,12 +32,12 @@
 
             <li><a href="eventos.php" class="col-12 m-0 p-0 ps-4 link-dark py-2">Eventos</a></li>
             <li><a href="regEvento.php" class="col-12 m-0 p-0 ps-4 link-dark py-2">Registrar eventos</a></li>
-            <!-- <li><a href="usuarios.php" class="col-12 m-0 p-0 ps-4 link-dark py-2">Eliminar Eventos</a></li> -->
+            <li><a href="eventos_eliminados.php" class="col-12 m-0 p-0 ps-4 link-dark py-2">Eventos eliminados</a></li>
 
           </ul>
         </div>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="#">
           <span data-feather="users"></span>
           Customers
@@ -54,17 +54,17 @@
           <span data-feather="layers"></span>
           Integrations
         </a>
-      </li>
+      </li> -->
     </ul>
 
-    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+    <!-- <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
       <span>Saved reports</span>
       <a class="link-secondary" href="#" aria-label="Add a new report">
         <span data-feather="plus-circle"></span>
       </a>
-    </h6>
+    </h6> -->
     <ul class="nav flex-column mb-2">
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="#">
           <span data-feather="file-text"></span>
           Current month
@@ -87,7 +87,7 @@
           <i class="fas fa-sign-out-alt"></i>
           Cerrar sesión
         </a>
-      </li>
+      </li> -->
     </ul>
   </div>
 </nav>

@@ -20,4 +20,3 @@
   }else {
     echo "<script>alert('error de registro');window,history.go(-1);</script>";
   }
-  

@@ -117,10 +117,6 @@
             <p>Cabe resaltar, que el compromiso es generar acciones que permitan que las nuevas
               generaciones tengan espacios educativos en condiciones adecuadas para que
               alumnos y profesores ejerzan sus deberes en un entorno óptimo.</p>
-            <p>
-              Cabe resaltar, que el compromiso es generar acciones que permitan que las nuevas
-              generaciones tengan espacios educativos en condiciones adecuadas para que
-              alumnos y profesores ejerzan sus deberes en un entorno óptimo.</p>
 
             <p>Es precisó mencionar que durante la gestión de Paco Santos, se estarán ofrecieron
               talleres para padres, activaciones físicas y culturales, como parte de sus oficinas de

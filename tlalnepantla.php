@@ -109,7 +109,7 @@
 
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
                 <div class="col">
-                  <div class="card shadow-sm">
+                  <div class="card shadow-sm h-100">
                     <div class="card-img">
                       <img src="img/empoderamiento.png" alt="">
                     </div>
@@ -133,7 +133,7 @@
                 </div>
 
                 <div class="col">
-                  <div class="card shadow-sm">
+                  <div class="card shadow-sm h-100">
                     <div class="card-img">
                       <img src="img/conferencia-y-talleres.png" alt="">
                     </div>
@@ -156,7 +156,7 @@
                 </div>
 
                 <div class="col">
-                  <div class="card shadow-sm">
+                  <div class="card shadow-sm h-100">
                     <div class="card-img">
                       <img src="img/asesoria.png" alt="">
                     </div>
@@ -179,7 +179,7 @@
                 </div>
 
                 <div class="col">
-                  <div class="card shadow-sm">
+                  <div class="card shadow-sm h-100">
                     <div class="card-img">
                       <img src="img/escuela.png" alt="">
                     </div>
@@ -204,7 +204,7 @@
                 </div>
 
                 <div class="col">
-                  <div class="card shadow-sm">
+                  <div class="card shadow-sm h-100">
                     <div class="card-img">
                       <img src="img/person-con-discapacidad.png" alt="">
                     </div>
@@ -229,7 +229,7 @@
                 </div>
 
                 <div class="col">
-                  <div class="card shadow-sm">
+                  <div class="card shadow-sm h-100">
                     <div class="card-img">
                       <img src="img/cultura.png" alt="">
                     </div>
@@ -253,7 +253,7 @@
                 </div>
 
                 <div class="col">
-                  <div class="card shadow-sm">
+                  <div class="card shadow-sm h-100">
                     <div class="card-img">
                       <img src="img/rescate-de-espacios.png" alt="">
                     </div>
@@ -280,7 +280,7 @@
                 </div>
 
                 <div class="col">
-                  <div class="card shadow-sm">
+                  <div class="card shadow-sm h-100">
                     <div class="card-img">
                       <img src="img/deporte.png" alt="">
                     </div>
@@ -372,7 +372,7 @@
             </div>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-6 pb-3">
             <div class="h-100 p-5 bg-light rounded-3 border-rojo">
               <h2>Visión</h2>
               <p>
@@ -469,31 +469,6 @@
               </li>
             </ul>
           </div>
-
-
-          <form class="row g-3" action="correoTlalnepantla.php" method="POST">
-            <div class="col-md-12 ">
-              <label for="inputNombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="inputNombre" name="nombre">
-            </div>
-            <div class="col-md-12">
-              <label for="inputEmail" class="form-label">Correo electrónico</label>
-              <input type="email" class="form-control" id="inputEmail" name="email">
-            </div>
-            <div class="col-md-12">
-              <label for="inputTelefono" class="form-label">Teléfono</label>
-              <input type="number" class="form-control" id="inputTelefono" name="telefono">
-            </div>
-            <div class="col-md-12">
-              <label for="inputMensaje" class="form-label">Mensaje</label>
-              <textarea cols=10 rows="10" type="number" class="form-control" id="inputMensaje" name="mensaje"></textarea>
-            </div>
-            
-            <div class="col-12 mb-4">
-              <button type="submit" class="btn btn-primary btn-lg">Enviar</button> 
-            </div>
-       
-          </form>
 
 
 

@@ -77,7 +77,7 @@
 
 
         <article class="blog-post">
-          <h2 class="blog-post-title m-4 comunicados font-paco">COMUNICADO 2</h2>
+          <h2 class="blog-post-title m-4 comunicados  ">COMUNICADO 2</h2>
 
           <hr>
 
@@ -96,7 +96,7 @@
           </div>
           <div class="col-lg-8 col-12 p-4">
             <div>
-              <h5  class="font-paco">
+              <h5  class=" ">
               El diputado por el distrito 26 Paco Santos llevó a
               cabo la implementación del “Plan de Apoyo para
               Garantizar una Reinserción Laboral de las Madres

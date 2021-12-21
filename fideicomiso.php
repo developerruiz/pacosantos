@@ -12,23 +12,22 @@
 
   <link rel="stylesheet" href="css/carouselImg.css">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/blog/">
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/navbar.css">
 
-  <!-- <link rel="stylesheet" href="css/slide.css"> -->
-
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!--   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="http://themes.audemedia.com/html/goodgrowth/css/owl.theme.default.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-   -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css'>
   <link rel="stylesheet" href="css/sidebars.css">
   <link rel="stylesheet" href="css/carouselFideicomiso.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <style>
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -54,16 +53,16 @@
 
 <body>
   <main class="container">
-    
-  <?php require 'complementos/header.php'; ?>
 
-    
+    <?php require 'complementos/header.php'; ?>
 
-      <?php require 'complementos/submenu.php'; ?>
+
+
+    <?php require 'complementos/submenu.php'; ?>
 
 
     <div class="mb-4 text-white rounded bg-dark align-items-center d-flex banner-fideicomiso">
-          
+
     </div>
 
 
@@ -93,28 +92,24 @@
 
 
           <div class="col-md-12 d-flex flex-wrap">
-            <div class="col-md-12 d-flex flex-wrap justify-content-center align-items-center">
-              <article class="blog-post ps-4 col-md-6">
-                <h2 class="blog-post-title mb-6 ">
-                  <h2>Misión</h2>
+            <div class="col-md-12 d-flex flex-wrap justify-content-center ">
+              <article class="col-md-6 blog-post ps-4">
+                <h2 class="blog-post-title mb-4 ">
+                  Misión
                 </h2>
                 <p>Generar nexos entre personas sin importar su estado socioeconómico, fomentando el vínculo humano,
                   preservándola esencia, los valores, cultura y vinculando el concepto de humanidad y civilidad en todos
                   nuestros actos.</p>
-                <blockquote class="blockquote">
-
               </article>
 
               <article class="col-md-6 blog-post ps-4">
                 <h2 class="blog-post-title mb-4">
-                  <h2>Visión</h2>
+                  Visión
                 </h2>
                 <p>
                   Acortar, guiar y solventar los problemas sociales, psicológicos, alimenticios, que vulneran el
                   desarrollo individual o grupal en la sociedad .
                 </p>
-                <blockquote class="blockquote">
-
               </article>
 
               <div class="col-md-6 my-4" style="height: 300px; overflow: hidden;">
@@ -204,7 +199,6 @@
                   <li><i class="fas fa-arrow-circle-right me-3"></i>Asistir o rehabilitar medicamente a la sociedad</li>
                   <li><i class="fas fa-arrow-circle-right me-3"></i>Implementar programas Estatales, Federales e
                     Internacionales para el desarrollo de la sociedad.</li>
-
                 </ul>
               </div>
 
@@ -353,29 +347,6 @@
               </li>
             </ul>
           </div>
-
-
-          <form class="row g-3">
-            <div class="col-md-12">
-              <label for="inputEmail4" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-md-12">
-              <label for="inputEmail4" class="form-label">Correo electrónico</label>
-              <input type="email" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-md-12">
-              <label for="inputEmail4" class="form-label">Teléfono</label>
-              <input type="number" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">Enviar</button>
-            </div>
-
-          </form>
-
-
-
 
         </div>
       </div>

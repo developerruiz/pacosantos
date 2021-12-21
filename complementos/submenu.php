@@ -22,9 +22,9 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="toluca.php">Toluca</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <!-- <li class="nav-item dropdown">
                             <a class="nav-link" href="concurso.php">Concurso</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
                 

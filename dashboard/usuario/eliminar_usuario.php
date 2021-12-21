@@ -3,7 +3,7 @@
 include ("../../conexion.php");
 
 $id_usuario = $_GET["id"];
-$eliminarUsuario="UPDATE tb_usuarios SET estatus = 3";
+$eliminarUsuario="UPDATE tb_usuarios SET estatus = 2";
 
 $resultado = mysqli_query($conexion, $eliminarUsuario);
 

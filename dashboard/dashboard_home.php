@@ -6,7 +6,6 @@
   
   if ($varsesion == null || $varsesion = '') {
     echo 'Favor de iniciar sesión';
-    
     die();   
   }
 

@@ -1,6 +1,5 @@
 <?php 
   session_start();
-
   include ("../conexion.php");
   $usuarios="SELECT * FROM tb_usuarios";  
   ?>
@@ -125,7 +124,7 @@
                 <td><?php echo $row['oficina']; ?></td>
                 <td>
                   <a href="editarUsuario.php?id=<?php echo $row['id_usuario'];?>" class="btn btn-warning btn-sm">Editar</a>
-                  <!-- Button trigger modal -->
+                  
                   <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Eliminar
                   </button>

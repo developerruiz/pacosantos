@@ -15,18 +15,15 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/navbar.css">
 
-  <!-- <link rel="stylesheet" href="css/slide.css"> -->
 
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!--   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="http://themes.audemedia.com/html/goodgrowth/css/owl.theme.default.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-   -->
+
+  <!-- fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css'>
+
   <link rel="stylesheet" href="css/sidebars.css">
   <link rel="stylesheet" href="css/carouselFideicomiso.css">
   <style>
@@ -56,10 +53,8 @@
   <main class="container">
     
     <?php require 'complementos/header.php'; ?>
-
-
-          <?php require 'complementos/submenu.php'; ?>
-
+    <?php require 'complementos/submenu.php'; ?>
+    
 
     <div class="mb-4 text-white rounded bg-dark align-items-center d-flex banner-quienes">
       <!-- <div class="col-md-6 px-0 "> -->
@@ -239,38 +234,11 @@
                 <div class="collapse" id="account-collapse">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                     <li><a href="toluca.php" class="link-dark rounded">Oficina toluca</a></li>
-                    <!-- <li><a href="#" class="link-dark rounded">Profile</a></li>
-                    <li><a href="#" class="link-dark rounded">Settings</a></li>
-                    <li><a href="#" class="link-dark rounded">Sign out</a></li> -->
                   </ul>
                 </div>
               </li>
             </ul>
           </div>
-
-
-          <form class="row g-3">
-            <div class="col-md-12">
-              <label for="inputEmail4" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-md-12">
-              <label for="inputEmail4" class="form-label">Correo electrónico</label>
-              <input type="email" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-md-12">
-              <label for="inputEmail4" class="form-label">Teléfono</label>
-              <input type="number" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">Enviar</button>
-            </div>
-
-          </form>
-
-
-
-
         </div>
       </div>
     </div>

@@ -131,7 +131,10 @@
 
                   <!-- <td><?php // echo $row['comentarios']; ?></td> -->
                   <td>
-                    <a href="det_evento.php?id=<?php echo $row['id_evento'];?>" class="">Ver más</a>
+                    <a href="det_evento.php?id=<?php echo $row['id_evento'];?>" class="btn btn-success btn-sm">Ver detalles</a>
+                  <a href="editar_evento.php?id=<?php echo $row['id_evento'];?>" class="btn btn-warning btn-sm">Editar</a>
+                  <!-- Button trigger modal -->
+
                   </td>
                 </tr>
 

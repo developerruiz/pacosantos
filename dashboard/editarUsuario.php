@@ -2,8 +2,10 @@
     session_start();
 
     include ("../conexion.php");
+
     $id_usuario = $_GET["id"];
     $usuarios="SELECT * FROM tb_usuarios WHERE id_usuario = '$id_usuario'";
+    
   ?>
 
 

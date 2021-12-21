@@ -91,9 +91,10 @@
 
           <div class="table-responsive">
             <table class="table table-striped table-sm">
-           
-           
-            <form action="proceso_registro.php" method="POST" onsubmit="return validar();" class="formulario-card" enctype="multipart/form-data">
+
+
+              <form action="proceso_registro.php" method="POST" onsubmit="return validar();" class="formulario-card"
+                enctype="multipart/form-data">
                 <div class="form-row formulario-card shadow-sm p-3 bg-white rounded">
 
                   <?php 
@@ -177,6 +178,7 @@
     <script src="../js/script.js"></script>
     <script src="../js/sidebars.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
+
   </body>
 
   </html>

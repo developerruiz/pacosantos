@@ -2,7 +2,11 @@
   include ("../conexion.php");
 
   $id_evento = $_GET["id"];
-  $eventos="SELECT * FROM tb_regevento WHERE id_evento = '$id_evento'";
+  $eventos="SELECT tb_regevento.id_evento,tb_regevento.nomEvento, tb_regevento.nomEvento, tb_regevento.desEvento,tb_regevento.fecha,tb_regevento.ubicacion,tb_regevento.fecha_publicado,tb_regevento.usuario, tb_regevento.id_usuario,tb_regevento.oficina,tb_regevento.imagen, tb_status.status
+  FROM tb_regevento
+  INNER JOIN tb_status
+  ON tb_regevento.status = tb_status.id_status
+  WHERE id_evento = '$id_evento'";
   
   ?>
 <!doctype html>
@@ -87,20 +91,29 @@
 
 
       <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-        <div
-          class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1 class="h2">Detalles</h1>
-          <div class="btn-toolbar mb-2 mb-md-0">
-            <div class="btn-group me-2">
-              <!-- <a href="registrar.php" class="btn btn-sm btn-success">Agregar usuario</a>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Export</button> -->
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <?php  $resultado = mysqli_query($conexion, $eventos);
+
+while ($row=mysqli_fetch_assoc($resultado)) { ?>
+        <div>
+            <h1 class="h2">Detalles</h1>
+        </div>
+
+          <div class="d-flex  my-2 align-items-center">
+            <!-- Button trigger modal -->
+            <a href="eventos.php" class="ms-2 fs-3">
+              <i class="fas fa-arrow-circle-left me-2"></i>Regresar
+            </a>
+
+            <div>
+              <a href="editar_evento.php?id=<?php echo $row['id_evento'];?>" class="btn btn-warning ms-2">
+                Modificar
+              </a>
+
             </div>
-            <!-- <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-                <span data-feather="calendar"></span>
-                This week
-              </button> -->
+
           </div>
+       
         </div>
 
         <!-- <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas> -->
@@ -109,9 +122,7 @@
         <div class="table-responsive">
           <table class="table table-striped table-sm">
 
-            <?php  $resultado = mysqli_query($conexion, $eventos);
-
-           while ($row=mysqli_fetch_assoc($resultado)) { ?>
+            
             <tr>
               <td>ID de solicitud</td>
               <td><?php echo $row['id_evento']; ?></td>
@@ -147,13 +158,9 @@
               <td><?php echo $row['oficina']; ?></td>
             </tr>
             <tr>
-              <td>Estatus</td>
-              <td id="pendiente">
-                <?php 
-                    if ($row['aprobada'] = 1) {
-                      echo "Publicado";
-                    }
-                  ?>
+              
+            <td>Estatus</td>
+              <td><?php echo $row['status']; ?></td>
               </td>
             </tr>
             <tr>
@@ -162,96 +169,7 @@
               </td>
             </tr>
           </table>
-          <div class="d-flex justify-content-between my-2 align-items-center">
-            <!-- Button trigger modal -->
-            <a href="eventos.php" class="ms-2 fs-3">
-              <i class="fas fa-arrow-circle-left me-2"></i>Regresar
-            </a>
 
-            <div>
-              <button type="button" class="btn btn-warning ms-2" data-bs-toggle="modal"
-                data-bs-target="#modificarEvento">
-                Modificar
-              </button>
-              <button type="button" class="btn btn-danger ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Eliminar
-              </button>
-            </div>
-
-          </div>
-          <!-- Modal -->
-          <div class="modal fade" id="modificarEvento" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Evento: <?php echo $row['nomEvento']; ?></h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-
-
-
-                
-                  <form action="evento/editar_evento.php" method="POST" enctype="multipart/form-data">
-
-                    <div class="my-3">
-                      <input type="text" name="id_evento" class="col-12 form-control" disabled
-                        value="<?php echo $row['id_evento']; ?>">
-                    </div>
-
-                    <div class="my-3">
-                      <label for="">Nombre del evento</label>
-                      <input type="text" name="nombre" class="col-12 form-control"
-                        value="<?php echo $row['nomEvento']; ?>">
-                    </div>
-                    
-                    <div class="my-3">
-                      <label for="">Descripción</label>
-                      <textarea name="descripcion" id="" cols="30" rows="10" class="form-control">
-                      <?php echo $row['desEvento']; ?>
-
-                      </textarea>
-                    </div>
-
-                    <div class="my-3">
-                      <label for="inputDate">Fecha del evento</label>
-                      <input type="date" class="form-control" name="inputDate" id="inputDate" required
-                        value="<?php echo $row['fecha']; ?>">
-                    </div>
-
-                    <div class="my-3">
-                      <label for="">Ubicación</label>
-                      <input type="text" name="nombre" class="col-12 form-control"
-                        value="<?php echo $row['ubicacion']; ?>">
-                    </div>
-
-
-                    <div class="form-group col-md-12">
-                      <label for="">Imagen</label>
-                      <td><img src="data:image/jpg;base64,<?php echo base64_encode($row['imagen']); ?>"
-                          style="width: 350px;" />
-                        <input type="file" name="imagen" id="imagen">
-                    </div>
-
-                    <div class="modal-footer justify-content-between">
-                      <div>
-                        <p>id_evento <?php echo $row['id_evento']; ?></p>
-                      </div>
-                      <div>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="submit" class="btn btn-danger">Aceptar</button>
-                      </div>
-
-                    </div>
-
-                  </form>
-
-                </div>
-
-              </div>
-            </div>
-          </div>
 
           <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -283,7 +201,7 @@
   </div>
 
 
-  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
     integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous">
@@ -291,6 +209,8 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
     integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous">
   </script>
+
+
   <script src="../js/dashboard.js"></script>
   <script src="../js/main.js"></script>
   <script src="../js/script.js"></script>

@@ -73,10 +73,10 @@
         </h3> -->
 
                 <article class="blog-post">
-                    <h2 class="blog-post-title mb-4 font-paco">
+                    <h2 class="blog-post-title mb-4  ">
                         CONCURSO CALAVERITAS LITERARIAS 2021
                     </h2>
-                    <h6 class="font-paco">
+                    <h6 class=" ">
                         Plaza cívica/Pueblo de Santiago Tepelcapa
                     </h6>
                     <hr>

@@ -77,7 +77,7 @@
 
 
         <article class="blog-post" id="comunicados_principal">
-          <h2 class="blog-post-title m-4 comunicados font-paco">COMUNICADO 7</h2>
+          <h2 class="blog-post-title m-4 comunicados  ">COMUNICADO 7</h2>
 
           <hr>
 
@@ -97,7 +97,7 @@
           </div>
           <div class="col-lg-8 col-12 p-4">
             <div>
-              <h5 class="font-paco">“Se estará pendiente de la aplicación de los
+              <h5 class=" ">“Se estará pendiente de la aplicación de los
                 recursos para lograr un impacto y equilibrio social
                 que de tranquilidad a los mexiquenses”.</h5>
             </div>

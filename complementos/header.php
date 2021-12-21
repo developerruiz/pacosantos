@@ -8,6 +8,8 @@
     <li class="nav-item"><a href="quienes.php" class="nav-link ms-4">¿Quién es?</a></li>
     <li class="nav-item"><a href="fideicomiso.php" class="nav-link ms-4">Fideicomiso</a></li>
     <li class="nav-item"><a href="comunicados.php" class="nav-link ms-4">Comunicados</a></li>
+    <li class="nav-item"><a href="videos.php" class="nav-link ms-4">Videos</a></li>
+
     <!-- <li class="nav-item"><a href="concurso.php" class="nav-link ms-4">Concurso</a></li> -->
 
 
