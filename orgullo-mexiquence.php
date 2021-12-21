@@ -1,57 +1,78 @@
 <!doctype html>
 <html lang="en">
-
 <head>
+
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Imagen-->
+  <meta property="og:image" content="img/share-pacosantos.png" />
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <!-- Descripcion -->
+  <meta name="description" content="SOY PACO SANTOS 23 de Julio de 1973, Nació en el municipio de Cuautitlán México el 23 de Julio de 1973, estudió tres diplomados en
+            Administración de Recursos Hidráulicos, Administración Pública Municipal y en Alemania el de Sistemas
+            Políticos en Europa y América Latina. Fue diputado federal, director de Educación, Secretario de Desarrollo Municipal de Cuautitlán, Jefe de
+            Asesores y Director de Agua Potable, Drenaje y Saneamiento del municipio de Tultitlán y Naucalpan. En sus años como empresario consiguió generar empleos directos para más de 500 personas del Estado de
+            México y 30 empleos en Estados Unidos.">
+
+  <meta property="og:description" content="SOY PACO SANTOS 23 de Julio de 1973, Nació en el municipio de Cuautitlán México el 23 de Julio de 1973, estudió tres diplomados en
+            Administración de Recursos Hidráulicos, Administración Pública Municipal y en Alemania el de Sistemas
+            Políticos en Europa y América Latina. Fue diputado federal, director de Educación, Secretario de Desarrollo Municipal de Cuautitlán, Jefe de
+            Asesores y Director de Agua Potable, Drenaje y Saneamiento del municipio de Tultitlán y Naucalpan. En sus años como empresario consiguió generar empleos directos para más de 500 personas del Estado de
+            México y 30 empleos en Estados Unidos." />
+
+  <meta name="author" content="Ivan Ruiz odriguez || Front-end Developer" />
+  <meta name="revised" content="09/12/2021" />
+  <meta property="og:site_name" content="Soy Paco Santos" />
+  <meta property="fb:admins" content="104570837902035" />
+  <meta property="article:published_time" content="2013-09-17T05:59:00+01:00" />
+  <meta property="article:modified_time" content="2013-09-16T19:08:47+01:00" />
+  <meta property="og:type" content="website" />
+
+  <meta http-equiv="cookie" content="clave=valor; expires=Saturday, 20-12-2021 16:55:55 GMT-6;" />
   <meta name="generator" content="Hugo 0.88.1">
+
   <title>Paco Santos || Diputado local distrito 26</title>
 
-
+  <!-- CSS -->
   <link rel="stylesheet" href="css/carouselImg.css">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/blog/">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/navbar.css">
-
-  <!-- <link rel="stylesheet" href="css/slide.css"> -->
+  <meta name="keywords" content="" />
 
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!--   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="http://themes.audemedia.com/html/goodgrowth/css/owl.theme.default.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-   -->
 
+  <!-- FontAwensome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css'>
   <link rel="stylesheet" href="css/sidebars.css">
   <link rel="stylesheet" href="css/carouselFideicomiso.css">
 
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
-
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="soypacpo">
+  <meta itemprop="description" content="Descripcion">
 
   <!-- Custom styles for this template -->
   <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
   <!-- Custom styles for this template -->
   <link href="css/blog.css" rel="stylesheet">
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XJVZMR2N0N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-XJVZMR2N0N');
+  </script>
 </head>
 
 <body>
@@ -66,7 +87,7 @@
       <div class="col-md-12">
 
         <article class="blog-post" id="comunicados_principal">
-          <h2 class="blog-post-title m-4 comunicados  ">Orgullos Mexiquences</h2>
+          <h2 class="blog-post-title m-4 comunicados font-paco">Orgullos Mexiquences</h2>
           <hr>
         </article>
 
@@ -75,7 +96,7 @@
             <i class="far fa-caret-square-left"></i>
           </a>
           <!-- VIDEO 1 -->
-          <div class="card col-lg-4">
+          <div class="card col-lg-4 bg-none border-none border-0 p-3">
             <div class="card-img">
               <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ehoMMdy7ANc"
                 title="YouTube video player" frameborder="0"
@@ -83,12 +104,12 @@
                 allowfullscreen></iframe>
             </div>
             <div class="card-body p-0 mt-3">
-              <a class="btn btn-primary d-grid gap-2   bg-azul" data-bs-toggle="collapse"
+              <a class="btn btn-primary d-grid gap-2 font-paco bg-azul" data-bs-toggle="collapse"
                 href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                 Leer más
               </a>
               <div class="collapse" id="collapseExample">
-                <div class="card card-body">
+                <div class="card bg-none border-none border-0 card-body">
                   Andrés Sánchez Hernández, mejor conocido como "KIB", es un diseñador mexiquense que se ha convertido
                   en
                   un fenómeno del arte urbano. Su trabajo de más de seis años lo ha respaldado con su peculiar estilo.
@@ -104,7 +125,7 @@
           </div>
 
           <!-- VIDEO 2 -->
-          <div class="card col-lg-4">
+          <div class="card col-lg-4 bg-none border-none border-0 p-3">
             <div class="card-img">
               <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fFJfAKYCeZc"
                 title="YouTube video player" frameborder="0"
@@ -112,12 +133,12 @@
                 allowfullscreen></iframe>
             </div>
             <div class="card-body p-0 mt-3">
-              <a class="btn btn-primary d-grid gap-2   bg-azul" data-bs-toggle="collapse" href="#video2"
+              <a class="btn btn-primary d-grid gap-2 font-paco bg-azul" data-bs-toggle="collapse" href="#video2"
                 role="button" aria-expanded="false" aria-controls="video2">
                 Leer más
               </a>
               <div class="collapse" id="video2">
-                <div class="card card-body">
+                <div class="card bg-none border-none border-0 card-body">
 
                   Tania Elizabeth Herrera, es una mujer sin limitaciones, busca destacar por su capacidad en la
                   disciplina
@@ -136,7 +157,7 @@
           </div>
 
           <!-- VIDEO 3-->
-          <div class="card col-lg-4">
+          <div class="card col-lg-4 bg-none border-none border-0 p-3">
             <div class="card-img">
               <iframe width="100%" height="100%" src="https://www.youtube.com/embed/o2qicfE7zzU"
                 title="YouTube video player" frameborder="0"
@@ -144,13 +165,13 @@
                 allowfullscreen></iframe>
             </div>
             <div class="card-body p-0 mt-3">
-              <a class="btn btn-primary d-grid gap-2   bg-azul" data-bs-toggle="collapse" href="#video3"
+              <a class="btn btn-primary d-grid gap-2 font-paco bg-azul" data-bs-toggle="collapse" href="#video3"
                 role="button" aria-expanded="false" aria-controls="video3">
                 Leer más
               </a>
 
               <div class="collapse" id="video3">
-                <div class="card card-body">
+                <div class="card bg-none border-none border-0 card-body">
                   Aldo Montoya, es un ilustrador mexiquense y el autor de “Criaturas en Proceso de Armonización” y
                   “Bestiario. Notas y recuerdos de un álbum familiar” libros donde refleja universos complejos, con
                   personajes con alta dosis de tenebrismo cargados de un mensaje que trasciende las palabras.
@@ -161,7 +182,7 @@
           </div>
 
           <!-- VIDEO 4 -->
-          <div class="card col-lg-4">
+          <div class="card col-lg-4 bg-none border-none border-0 p-3">
             <div class="card-img">
               <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Z6mpa9eHU1E"
                 title="YouTube video player" frameborder="0"
@@ -170,13 +191,13 @@
             </div>
 
             <div class="card-body p-0 mt-3">
-              <a class="btn btn-primary d-grid gap-2   bg-azul" data-bs-toggle="collapse" href="#video4"
+              <a class="btn btn-primary d-grid gap-2 font-paco bg-azul" data-bs-toggle="collapse" href="#video4"
                 role="button" aria-expanded="false" aria-controls="video4">
                 Leer más
               </a>
 
               <div class="collapse" id="video4">
-                <div class="card card-body">
+                <div class="card bg-none border-none border-0 card-body">
                   Pablo Monterroso es un talentoso bailarín, coreógrafo y profesor que se ha convertido en un fenómeno
                   de
                   la danza. Al paso de los años, se labró un nombre en la escena del baile hip-hop y desde el principio
@@ -189,7 +210,7 @@
           </div>
 
           <!-- VIDEO 5 -->
-          <div class="card col-lg-4">
+          <div class="card col-lg-4 bg-none border-none border-0 p-3">
             <div class="card-img">
               <iframe width="100%" height="100%" src="https://www.youtube.com/embed/iryNHw31Blg"
                 title="YouTube video player" frameborder="0"
@@ -197,12 +218,12 @@
                 allowfullscreen></iframe>
             </div>
             <div class="card-body p-0 mt-3">
-              <a class="btn btn-primary d-grid gap-2   bg-azul" data-bs-toggle="collapse" href="#video5"
+              <a class="btn btn-primary d-grid gap-2 font-paco bg-azul" data-bs-toggle="collapse" href="#video5"
                 role="button" aria-expanded="false" aria-controls="video5">
                 Leer más
               </a>
               <div class="collapse" id="video5">
-                <div class="card card-body">
+                <div class="card bg-none border-none border-0 card-body">
                   Erika Andrea, mejor conocida como “Kika Rocha” es una pintora especializada en la técnica de la
                   acuarela, cuya sensibilidad y creatividad la han llevado a convertirse en un fenómeno entre los
                   acuarelistas obteniendo un gran reconocimiento por su trabajo.
@@ -213,7 +234,7 @@
           </div>
 
           <!-- VIDEO 6 -->
-          <div class="card col-lg-4">
+          <div class="card col-lg-4 bg-none border-none border-0 p-3">
             <div class="card-img">
               <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JPMr4MlY94M"
                 title="YouTube video player" frameborder="0"
@@ -221,13 +242,13 @@
                 allowfullscreen></iframe>
             </div>
             <div class="card-body p-0 mt-3">
-              <a class="btn btn-primary d-grid gap-2   bg-azul" data-bs-toggle="collapse" href="#video6"
+              <a class="btn btn-primary d-grid gap-2 font-paco bg-azul" data-bs-toggle="collapse" href="#video6"
                 role="button" aria-expanded="false" aria-controls="video6">
                 Leer más
               </a>
 
               <div class="collapse" id="video6">
-                <div class="card card-body">
+                <div class="card bg-none border-none border-0 card-body">
                   ¡NO TE QUEDES FUERA! Participa en el concurso de la primera temporada de Orgullos Mexiquenses. Lo
                   único
                   que tienes que hacer es seguir todos los pasos que se explican en el video; de resultar ganador podrás
@@ -239,7 +260,7 @@
           </div>
 
           <!-- VIDEO 7 -->
-          <div class="card col-lg-4">
+          <div class="card col-lg-4 bg-none border-none border-0 p-3">
             <div class="card-img">
               <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LA3Rc7Wmmsg"
                 title="YouTube video player" frameborder="0"
@@ -247,12 +268,12 @@
                 allowfullscreen></iframe>
             </div>
             <div class="card-body p-0 mt-3">
-              <a class="btn btn-primary d-grid gap-2   bg-azul" data-bs-toggle="collapse" href="#video7"
+              <a class="btn btn-primary d-grid gap-2 font-paco bg-azul" data-bs-toggle="collapse" href="#video7"
                 role="button" aria-expanded="false" aria-controls="video7">
                 Leer más
               </a>
               <div class="collapse" id="video7">
-                <div class="card card-body">
+                <div class="card bg-none border-none border-0 card-body">
                   Eduardo Robledo, mexiquense reconocido en el mundo del skateboarding nos platica sobre la pasión de
                   patinar en una tabla, actividad peculiar que ha practicado desde hace doce años; ahora es un ícono de
                   la
@@ -264,7 +285,7 @@
           </div>
 
           <!-- VIDEO 8 -->
-          <div class="card col-lg-4">
+          <div class="card col-lg-4 bg-none border-none border-0 p-3">
             <div class="card-img">
               <iframe width="100%" height="100%" src="https://www.youtube.com/embed/cSP0kyr_XXE"
                 title="YouTube video player" frameborder="0"
@@ -272,12 +293,12 @@
                 allowfullscreen></iframe>
             </div>
             <div class="card-body p-0 mt-3">
-              <a class="btn btn-primary d-grid gap-2   bg-azul" data-bs-toggle="collapse" href="#video8"
+              <a class="btn btn-primary d-grid gap-2 font-paco bg-azul" data-bs-toggle="collapse" href="#video8"
                 role="button" aria-expanded="false" aria-controls="video8">
                 Leer más
               </a>
               <div class="collapse" id="video8">
-                <div class="card card-body">
+                <div class="card bg-none border-none border-0 card-body">
                   Alejandra Prudhomme, mejor conocida como “Miss Ale”, es educadora, diseñadora y creadora del único e
                   innovador contenido de Un Mundo Preescolar, proyecto que inició ante las dificultades de la pandemia y
                   la necesidad de llevar la escuela hasta los hogares de los niños, sin perder la total atención de sus
@@ -288,7 +309,7 @@
           </div>
 
           <!-- VIDEO 9 -->
-          <div class="card col-lg-4">
+          <div class="card col-lg-4 bg-none border-none border-0 p-3">
             <div class="card-img">
               <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Hy1sHjz0kqg"
                 title="YouTube video player" frameborder="0"
@@ -296,12 +317,12 @@
                 allowfullscreen></iframe>
             </div>
             <div class="card-body p-0 mt-3">
-              <a class="btn btn-primary d-grid gap-2   bg-azul" data-bs-toggle="collapse" href="#video9"
+              <a class="btn btn-primary d-grid gap-2 font-paco bg-azul" data-bs-toggle="collapse" href="#video9"
                 role="button" aria-expanded="false" aria-controls="video9">
                 Leer más
               </a>
               <div class="collapse" id="video9">
-                <div class="card card-body">
+                <div class="card bg-none border-none border-0 card-body">
                   MANHY SALGADO ES UN ORGULLO MEXIQUENSE
                   <br>
                   Juan Manuel Salgado, mejor conocido en la escena del hip- hop como Menhy Salgado, es un rapero
@@ -314,7 +335,7 @@
           </div>
 
           <!-- VIDEO 10 -->
-          <div class="card col-lg-4">
+          <div class="card col-lg-4 bg-none border-none border-0 p-3">
             <div class="card-img">
               <iframe width="100%" height="100%" src="https://www.youtube.com/embed/UPeReHEVUtg"
                 title="YouTube video player" frameborder="0"
@@ -322,12 +343,12 @@
                 allowfullscreen></iframe>
             </div>
             <div class="card-body p-0 mt-3">
-              <a class="btn btn-primary d-grid gap-2   bg-azul" data-bs-toggle="collapse" href="#video10"
+              <a class="btn btn-primary d-grid gap-2 font-paco bg-azul" data-bs-toggle="collapse" href="#video10"
                 role="button" aria-expanded="false" aria-controls="video10">
                 Leer más
               </a>
               <div class="collapse" id="video10">
-                <div class="card card-body">
+                <div class="card bg-none border-none border-0 card-body">
                   Muchas felicidades a todos nuestros orgullos mexiquenses de está primera temporada, sin duda son
                   dignos
                   representantes del talento que existe en el Estado de México.
@@ -340,7 +361,7 @@
           </div>
 
           <!-- VIDEO 11 -->
-          <div class="card col-lg-4">
+          <div class="card col-lg-4 bg-none border-none border-0 p-3">
             <div class="card-img">
               <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HAWegTEjShA"
                 title="YouTube video player" frameborder="0"
@@ -348,12 +369,12 @@
                 allowfullscreen></iframe>
             </div>
             <div class="card-body p-0 mt-3">
-              <a class="btn btn-primary d-grid gap-2   bg-azul" data-bs-toggle="collapse" href="#video11"
+              <a class="btn btn-primary d-grid gap-2 font-paco bg-azul" data-bs-toggle="collapse" href="#video11"
                 role="button" aria-expanded="false" aria-controls="video11">
                 Leer más
               </a>
               <div class="collapse" id="video11">
-                <div class="card card-body">
+                <div class="card bg-none border-none border-0 card-body">
                   ¡Viva México! ¡Viva México! ¡Viva México!
                   Ser mexicano es lo más CHINGON del mundo! Siempre me sentiré orgulloso de mi país, de mis costumbre,
                   paisajes, cultura, gastronomía, pero sobre todo de su gente 👏🏽👏🏽👏🏽 ¡¡¡QUE VIVA MÉXICO !!!
@@ -364,7 +385,7 @@
           </div>
 
           <!-- VIDEO 12 -->
-          <div class="card col-lg-4">
+          <div class="card col-lg-4 bg-none border-none border-0 p-3">
             <div class="card-img">
               <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kD1Pc9TiMbI"
                 title="YouTube video player" frameborder="0"
@@ -372,12 +393,12 @@
                 allowfullscreen></iframe>
             </div>
             <div class="card-body p-0 mt-3">
-              <a class="btn btn-primary d-grid gap-2   bg-azul" data-bs-toggle="collapse" href="#video12"
+              <a class="btn btn-primary d-grid gap-2 font-paco bg-azul" data-bs-toggle="collapse" href="#video12"
                 role="button" aria-expanded="false" aria-controls="video12">
                 Leer más
               </a>
               <div class="collapse" id="video12">
-                <div class="card card-body">
+                <div class="card bg-none border-none border-0 card-body">
                   FOLKLÓRICO IXTLAN ES UN ORGULLO MEXIQUENSE
                   La danza folklórica es nuestra esencia y Folklórico Ixtlan lo representa con gran orgullo, son un
                   grupo
@@ -390,7 +411,7 @@
           </div>
 
           <!-- VIDEO 13 -->
-          <div class="card col-lg-4">
+          <div class="card col-lg-4 bg-none border-none border-0 p-3">
             <div class="card-img">
               <iframe width="100%" height="100%" src="https://www.youtube.com/embed/oItUu40dkkk"
                 title="YouTube video player" frameborder="0"
@@ -398,12 +419,12 @@
                 allowfullscreen></iframe>
             </div>
             <div class="card-body p-0 mt-3">
-              <a class="btn btn-primary d-grid gap-2   bg-azul" data-bs-toggle="collapse" href="#video13"
+              <a class="btn btn-primary d-grid gap-2 font-paco bg-azul" data-bs-toggle="collapse" href="#video13"
                 role="button" aria-expanded="false" aria-controls="video13">
                 Leer más
               </a>
               <div class="collapse" id="video13">
-                <div class="card card-body">
+                <div class="card bg-none border-none border-0 card-body">
                   Axel Ramírez, es músico por vocación, un mexiquense que a sus quince años se ha convertido en un
                   fenómeno del área. Ha logrado brillar de forma independiente tocando de manera artística su guitarra.
                 </div>
@@ -413,7 +434,7 @@
           </div>
 
           <!-- VIDEO 14 -->
-          <div class="card col-lg-4">
+          <div class="card col-lg-4 bg-none border-none border-0 p-3">
             <div class="card-img">
               <iframe width="100%" height="100%" src="https://www.youtube.com/embed/mHxJP4RWG5k"
                 title="YouTube video player" frameborder="0"
@@ -421,12 +442,12 @@
                 allowfullscreen></iframe>
             </div>
             <div class="card-body p-0 mt-3">
-              <a class="btn btn-primary d-grid gap-2   bg-azul" data-bs-toggle="collapse" href="#video14"
+              <a class="btn btn-primary d-grid gap-2 font-paco bg-azul" data-bs-toggle="collapse" href="#video14"
                 role="button" aria-expanded="false" aria-controls="video14">
                 Leer más
               </a>
               <div class="collapse" id="video14">
-                <div class="card card-body">
+                <div class="card bg-none border-none border-0 card-body">
                   Paola Anyelina Torres, es una actriz mexiquense, que desde muy corta edad descubrió su pasión por el
                   arte, sus habilidades para la interpretación la han llevado a conseguir papeles importantes en
                   producciones infantiles y juveniles que sirvieron de catapulta para llevarla a cumplir sus sueños.
@@ -440,7 +461,7 @@
           </div>
 
           <!-- VIDEO 15 -->
-          <div class="card col-lg-4">
+          <div class="card col-lg-4 bg-none border-none border-0 p-3">
             <div class="card-img">
               <iframe width="100%" height="100%" src="https://www.youtube.com/embed/krjp-DeBkT4"
                 title="YouTube video player" frameborder="0"
@@ -448,12 +469,12 @@
                 allowfullscreen></iframe>
             </div>
             <div class="card-body p-0 mt-3">
-              <a class="btn btn-primary d-grid gap-2   bg-azul" data-bs-toggle="collapse" href="#video15"
+              <a class="btn btn-primary d-grid gap-2 font-paco bg-azul" data-bs-toggle="collapse" href="#video15"
                 role="button" aria-expanded="false" aria-controls="video15">
                 Leer más
               </a>
               <div class="collapse" id="video15">
-                <div class="card card-body">
+                <div class="card bg-none border-none border-0 card-body">
                   El orgullo de portar el traje de charro lo conoce a la perfección Santiago Jiménez, joven mexiquense y
                   representante del Estado de México en el arte de la charrería, quien desde muy pequeño ha practicado
                   este deporte donde plasma el trabajo duro, constancia, valor y determinación.
@@ -464,7 +485,7 @@
           </div>
 
           <!-- VIDEO 16 -->
-          <div class="card col-lg-4">
+          <div class="card col-lg-4 bg-none border-none border-0 p-3">
             <div class="card-img">
               <iframe width="100%" height="100%" src="https://www.youtube.com/embed/16_Slc1CBsI"
                 title="YouTube video player" frameborder="0"
@@ -472,12 +493,12 @@
                 allowfullscreen></iframe>
             </div>
             <div class="card-body p-0 mt-3">
-              <a class="btn btn-primary d-grid gap-2   bg-azul" data-bs-toggle="collapse" href="#video16"
+              <a class="btn btn-primary d-grid gap-2 font-paco bg-azul" data-bs-toggle="collapse" href="#video16"
                 role="button" aria-expanded="false" aria-controls="video16">
                 Leer más
               </a>
               <div class="collapse" id="video16">
-                <div class="card card-body">
+                <div class="card bg-none border-none border-0 card-body">
                   ERIKA ROCHA, GANADORA DE LA 1RA TEMPORADA DE ORGULLOS MEXIQUENSES
                   <br>
                   Sin temor a equivocarme sé que Erika Rocha es una mexiquense apasionada por el arte, que busca siempre
@@ -491,7 +512,7 @@
           </div>
 
           <!-- VIDEO 17 -->
-          <div class="card col-lg-4">
+          <div class="card col-lg-4 bg-none border-none border-0 p-3">
             <div class="card-img">
               <iframe width="100%" height="100%" src="https://www.youtube.com/embed/00pgLkOj_mg"
                 title="YouTube video player" frameborder="0"
@@ -499,12 +520,12 @@
                 allowfullscreen></iframe>
             </div>
             <div class="card-body p-0 mt-3">
-              <a class="btn btn-primary d-grid gap-2   bg-azul" data-bs-toggle="collapse" href="#video17"
+              <a class="btn btn-primary d-grid gap-2 font-paco bg-azul" data-bs-toggle="collapse" href="#video17"
                 role="button" aria-expanded="false" aria-controls="video17">
                 Leer más
               </a>
               <div class="collapse" id="video17">
-                <div class="card card-body">
+                <div class="card bg-none border-none border-0 card-body">
                   Valentía, destreza, audacia, un impecable manejo del caballo, sincronización y precisión, son algunos
                   de
                   los atributos que tiene Elena Alfaro, mujer mexiquense que integra una Escaramuza Charra.
@@ -521,7 +542,7 @@
           </div>
 
           <!-- VIDEO 18 -->
-          <div class="card col-lg-4">
+          <div class="card col-lg-4 bg-none border-none border-0 p-3">
             <div class="card-img">
               <iframe width="100%" height="100%" src="https://www.youtube.com/embed/N7ysyCXgamg"
                 title="YouTube video player" frameborder="0"
@@ -530,12 +551,12 @@
             </div>
 
             <div class="card-body p-0 mt-3">
-              <a class="btn btn-primary d-grid gap-2   bg-azul" data-bs-toggle="collapse" href="#video18"
+              <a class="btn btn-primary d-grid gap-2 font-paco bg-azul" data-bs-toggle="collapse" href="#video18"
                 role="button" aria-expanded="false" aria-controls="video18">
                 Leer más
               </a>
               <div class="collapse" id="video18">
-                <div class="card card-body">
+                <div class="card bg-none border-none border-0 card-body">
                   Claudia Pérez Villalba es un ejemplo de vida... A los 25 años le diagnosticaron artritis reumatoide,
                   un
                   proceso complicado que tuvo que aceptar luego de una fuerte depresión. Sin embargo, logró sobreponerse
@@ -547,7 +568,7 @@
           </div>
 
           <!-- VIDEO 19 -->
-          <div class="card col-lg-4">
+          <div class="card col-lg-4 bg-none border-none border-0 p-3">
             <div class="card-img">
               <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BXAQzHQqkVg"
                 title="YouTube video player" frameborder="0"
@@ -555,12 +576,12 @@
                 allowfullscreen></iframe>
             </div>
             <div class="card-body p-0 mt-3">
-              <a class="btn btn-primary d-grid gap-2   bg-azul" data-bs-toggle="collapse" href="#video19"
+              <a class="btn btn-primary d-grid gap-2 font-paco bg-azul" data-bs-toggle="collapse" href="#video19"
                 role="button" aria-expanded="false" aria-controls="video19">
                 Leer más
               </a>
               <div class="collapse" id="video19">
-                <div class="card card-body">
+                <div class="card bg-none border-none border-0 card-body">
                   bre mexiquense apasionado de la música y maestro de profesión, logró fusionar estas
                   dos actividades y convertirse en un educador fuera de serie. Ser cantante le abrió muchas puertas y
                   consiguió destacar de forma independiente hasta grabar su propio disco.
@@ -570,7 +591,7 @@
           </div>
 
           <!-- VIDEO 20 -->
-          <div class="card col-lg-4">
+          <div class="card col-lg-4 bg-none border-none border-0 p-3">
             <div class="card-img">
               <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Jy7CGmIxqno"
                 title="YouTube video player" frameborder="0"
@@ -578,12 +599,12 @@
                 allowfullscreen></iframe>
             </div>
             <div class="card-body p-0 mt-3">
-              <a class="btn btn-primary d-grid gap-2   bg-azul" data-bs-toggle="collapse" href="#video20"
+              <a class="btn btn-primary d-grid gap-2 font-paco bg-azul" data-bs-toggle="collapse" href="#video20"
                 role="button" aria-expanded="false" aria-controls="video20">
                 Leer más
               </a>
               <div class="collapse" id="video20">
-                <div class="card card-body">
+                <div class="card bg-none border-none border-0 card-body">
                   i tortugas como las de Daniel Bravo. Si hablamos de colores vivos, arte único y
                   vivaz, este mexiquense es el ejemplo perfecto de innovación, creatividad e inspiración, en cada una de
                   sus obras plasma una emoción que a través del óleo y diferentes técnicas construye una historia visual
@@ -594,7 +615,7 @@
           </div>
           <!-- VIDEO 21 -->
 
-          <div class="card col-lg-4">
+          <div class="card col-lg-4 bg-none border-none border-0 p-3">
             <div class="card-img">
               <iframe width="100%" height="100%" src="https://www.youtube.com/embed/u5qhv8pg2Pw"
                 title="YouTube video player" frameborder="0"
@@ -602,12 +623,12 @@
                 allowfullscreen></iframe>
             </div>
             <div class="card-body p-0 mt-3">
-              <a class="btn btn-primary d-grid gap-2   bg-azul" data-bs-toggle="collapse" href="#video21"
+              <a class="btn btn-primary d-grid gap-2 font-paco bg-azul" data-bs-toggle="collapse" href="#video21"
                 role="button" aria-expanded="false" aria-controls="video21">
                 Leer más
               </a>
               <div class="collapse" id="video21">
-                <div class="card card-body">
+                <div class="card bg-none border-none border-0 card-body">
                   Es mexiquense, profesor de educación física y deportista apasionado. Desde muy joven
                   tuvo la fortuna de jugar basketball profesional en la liga mexicana de Jalapa, tiempo después continuo
                   su trayectoria deportiva en liga mayor.
