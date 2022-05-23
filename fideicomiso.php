@@ -2,68 +2,92 @@
 <html lang="en">
 
 <head>
+
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Imagen-->
+  <meta property="og:image" content="img/share-pacosantos.png" />
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <!-- Descripcion -->
+  <meta name="description" content="SOY PACO SANTOS 23 de Julio de 1973, Nació en el municipio de Cuautitlán México el 23 de Julio de 1973, estudió tres diplomados en
+            Administración de Recursos Hidráulicos, Administración Pública Municipal y en Alemania el de Sistemas
+            Políticos en Europa y América Latina. Fue diputado federal, director de Educación, Secretario de Desarrollo Municipal de Cuautitlán, Jefe de
+            Asesores y Director de Agua Potable, Drenaje y Saneamiento del municipio de Tultitlán y Naucalpan. En sus años como empresario consiguió generar empleos directos para más de 500 personas del Estado de
+            México y 30 empleos en Estados Unidos.">
+
+  <meta property="og:description" content="SOY PACO SANTOS 23 de Julio de 1973, Nació en el municipio de Cuautitlán México el 23 de Julio de 1973, estudió tres diplomados en
+            Administración de Recursos Hidráulicos, Administración Pública Municipal y en Alemania el de Sistemas
+            Políticos en Europa y América Latina. Fue diputado federal, director de Educación, Secretario de Desarrollo Municipal de Cuautitlán, Jefe de
+            Asesores y Director de Agua Potable, Drenaje y Saneamiento del municipio de Tultitlán y Naucalpan. En sus años como empresario consiguió generar empleos directos para más de 500 personas del Estado de
+            México y 30 empleos en Estados Unidos." />
+
+  <meta name="author" content="Ivan Ruiz odriguez || Front-end Developer" />
+  <meta name="revised" content="09/12/2021" />
+  <meta property="og:site_name" content="Soy Paco Santos" />
+  <meta property="fb:admins" content="104570837902035" />
+  <meta property="article:published_time" content="2013-09-17T05:59:00+01:00" />
+  <meta property="article:modified_time" content="2013-09-16T19:08:47+01:00" />
+  <meta property="og:type" content="website" />
+
+  <meta http-equiv="cookie" content="clave=valor; expires=Saturday, 20-12-2021 16:55:55 GMT-6;" />
   <meta name="generator" content="Hugo 0.88.1">
+
   <title>Paco Santos || Diputado local distrito 26</title>
 
-
+  <!-- CSS -->
   <link rel="stylesheet" href="css/carouselImg.css">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/blog/">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/navbar.css">
-
-  <!-- <link rel="stylesheet" href="css/slide.css"> -->
+  <meta name="keywords" content="" />
 
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!--   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="http://themes.audemedia.com/html/goodgrowth/css/owl.theme.default.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-   -->
+
+  <!-- FontAwensome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css'>
   <link rel="stylesheet" href="css/sidebars.css">
   <link rel="stylesheet" href="css/carouselFideicomiso.css">
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
 
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
-
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="soypacpo">
+  <meta itemprop="description" content="Descripcion">
 
   <!-- Custom styles for this template -->
   <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
   <!-- Custom styles for this template -->
   <link href="css/blog.css" rel="stylesheet">
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XJVZMR2N0N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-XJVZMR2N0N');
+  </script>
 </head>
 
 <body>
   <main class="container">
-    
-  <?php require 'complementos/header.php'; ?>
 
-    
+    <?php require 'complementos/header.php'; ?>
 
-      <?php require 'complementos/submenu.php'; ?>
+
+
+    <?php require 'complementos/submenu.php'; ?>
 
 
     <div class="mb-4 text-white rounded bg-dark align-items-center d-flex banner-fideicomiso">
-          
+
     </div>
 
 
@@ -93,28 +117,24 @@
 
 
           <div class="col-md-12 d-flex flex-wrap">
-            <div class="col-md-12 d-flex flex-wrap justify-content-center align-items-center">
-              <article class="blog-post ps-4 col-md-6">
-                <h2 class="blog-post-title mb-6 ">
-                  <h2>Misión</h2>
+            <div class="col-md-12 d-flex flex-wrap justify-content-center ">
+              <article class="col-md-6 blog-post ps-4">
+                <h2 class="blog-post-title mb-4 ">
+                  Misión
                 </h2>
                 <p>Generar nexos entre personas sin importar su estado socioeconómico, fomentando el vínculo humano,
                   preservándola esencia, los valores, cultura y vinculando el concepto de humanidad y civilidad en todos
                   nuestros actos.</p>
-                <blockquote class="blockquote">
-
               </article>
 
               <article class="col-md-6 blog-post ps-4">
                 <h2 class="blog-post-title mb-4">
-                  <h2>Visión</h2>
+                  Visión
                 </h2>
                 <p>
                   Acortar, guiar y solventar los problemas sociales, psicológicos, alimenticios, que vulneran el
                   desarrollo individual o grupal en la sociedad .
                 </p>
-                <blockquote class="blockquote">
-
               </article>
 
               <div class="col-md-6 my-4" style="height: 300px; overflow: hidden;">
@@ -204,7 +224,6 @@
                   <li><i class="fas fa-arrow-circle-right me-3"></i>Asistir o rehabilitar medicamente a la sociedad</li>
                   <li><i class="fas fa-arrow-circle-right me-3"></i>Implementar programas Estatales, Federales e
                     Internacionales para el desarrollo de la sociedad.</li>
-
                 </ul>
               </div>
 
@@ -276,108 +295,9 @@
 
       </div>
       <div class="col-md-4">
-        <div class="position-sticky" style="top: 2rem;">
-          <div class="p-4 mb-3 bg-light rounded">
-            <h4 class="fst-italic">Oficinas</h4>
 
-            <ul class="list-unstyled ps-0">
-              <li class="mb-1">
-                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                  data-bs-target="#home-collapse" aria-expanded="true">
-                  Cuautitlán Izcalli
-                </button>
-                <div class="collapse show" id="home-collapse">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark rounded">Empoderamiento de la mujer</a></li>
-                    <li><a href="#" class="link-dark rounded">Conferencia y Talleres</a></li>
-                    <li><a href="#" class="link-dark rounded">Asesoría Jurídica</a></li>
-                    <li><a href="#" class="link-dark rounded">Escuelas</a></li>
-                    <li><a href="#" class="link-dark rounded">Personas con discapacidad</a></li>
-                    <li><a href="#" class="link-dark rounded">Cultura</a></li>
-                    <li><a href="#" class="link-dark rounded">Rescate de espacios públicos</a></li>
-                    <li><a href="#" class="link-dark rounded">Deporte</a></li>
+        <?php include 'complementos/menu-desplegable.php'; ?>
 
-                  </ul>
-                </div>
-              </li>
-              <li class="mb-1">
-                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                  data-bs-target="#dashboard-collapse" aria-expanded="false">
-                  Tlalnepantla
-                </button>
-                <div class="collapse" id="dashboard-collapse">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark rounded">Empoderamiento de la mujer</a></li>
-                    <li><a href="#" class="link-dark rounded">Conferencia y Talleres</a></li>
-                    <li><a href="#" class="link-dark rounded">Asesoría Jurídica</a></li>
-                    <li><a href="#" class="link-dark rounded">Escuelas</a></li>
-                    <li><a href="#" class="link-dark rounded">Personas con discapacidad</a></li>
-                    <li><a href="#" class="link-dark rounded">Cultura</a></li>
-                    <li><a href="#" class="link-dark rounded">Rescate de espacios públicos</a></li>
-                    <li><a href="#" class="link-dark rounded">Deporte</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="mb-1">
-                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                  data-bs-target="#orders-collapse" aria-expanded="false">
-                  Tultitlán
-                </button>
-                <div class="collapse" id="orders-collapse">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark rounded">Empoderamiento de la mujer</a></li>
-                    <li><a href="#" class="link-dark rounded">Conferencia y Talleres</a></li>
-                    <li><a href="#" class="link-dark rounded">Asesoría Jurídica</a></li>
-                    <li><a href="#" class="link-dark rounded">Escuelas</a></li>
-                    <li><a href="#" class="link-dark rounded">Personas con discapacidad</a></li>
-                    <li><a href="#" class="link-dark rounded">Cultura</a></li>
-                    <li><a href="#" class="link-dark rounded">Rescate de espacios públicos</a></li>
-                    <li><a href="#" class="link-dark rounded">Deporte</a></li>
-                  </ul>
-                </div>
-              </li>
-              <!-- <li class="border-top my-3"></li> -->
-              <li class="mb-1">
-                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                  data-bs-target="#account-collapse" aria-expanded="false">
-                  Toluca
-                </button>
-                <div class="collapse" id="account-collapse">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="toluca.php" class="link-dark rounded">Oficina toluca</a></li>
-                    <!-- <li><a href="#" class="link-dark rounded">Profile</a></li>
-                    <li><a href="#" class="link-dark rounded">Settings</a></li>
-                    <li><a href="#" class="link-dark rounded">Sign out</a></li> -->
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-
-          <form class="row g-3">
-            <div class="col-md-12">
-              <label for="inputEmail4" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-md-12">
-              <label for="inputEmail4" class="form-label">Correo electrónico</label>
-              <input type="email" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-md-12">
-              <label for="inputEmail4" class="form-label">Teléfono</label>
-              <input type="number" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">Enviar</button>
-            </div>
-
-          </form>
-
-
-
-
-        </div>
       </div>
     </div>
 
