@@ -80,13 +80,12 @@
     <?php require 'complementos/header.php'; ?>
     <?php require 'complementos/submenu.php'; ?>
 
-    <div class="carousel-prueb">
+    <!-- <div class="carousel-prueb">
       <div class="texto-banner">
         <h1>PACO SANTOS</h1>
         <h2>DIPUTADO LOCAL DISTRITO 26</h2>
-      </div>
-      <video src="img/soypacosantos.mp4" width="100%" height="auto" muted autoplay loop></video>
-    </div>
+      </div> 
+    </div> -->
 
     <div class="container marketing ">
       <div class="col-lg-12 text-center mt-5">
@@ -94,26 +93,7 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-4 my-5">
-          <div class="card boder rounded-5">
-            <div class="card-img">
-              <img src="img/cuautitlan.jpg" alt="" class="contador ocultar">
-            </div>
-            <div class="card-body">
-              <h5 class="text-start ">Cuautitlán Izcalli</h5>
-              <p class="text-start m-0">Participar en el desarrollo comunitario, siendo enlace directo entre la sociedad
-                y la legislación, estableciendo cooperación y así establecer un desarrollo eficaz que mejore la calidad
-                de vida de los izcallenses.</p>
-              <br>
-            </div>
-            <div class="">
-              <div class="d-grid gap-2">
-                <a href="cuautitlan.php" class="btn btn-primary btn-lg bg-amarillo border-none m-3 " type="button">Ver
-                  más</a>
-              </div>
-            </div>
-          </div>
-        </div>
+      
         <div class="col-lg-4 my-5">
           <div class="card">
 
@@ -153,6 +133,24 @@
             <div>
               <div class="d-grid gap-2">
                 <a href="tultitlan.php" class="btn btn-primary btn-lg  bg-azul border-none m-3 " type="button">Ver
+                  más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 my-5">
+          <div class="card boder rounded-5">
+            <div class="card-img">
+              <img src="img/Mapa-de-Toluca.jpg" alt="" class="contador ocultar">
+            </div>
+            <div class="card-body">
+              <h5 class="text-start ">Toluca</h5>
+              <p class="text-start m-0">Participar en el desarrollo comunitario, siendo enlace directo entre la sociedad y la legislación, estableciendo cooperación y así establecer un desarrollo eficaz que mejore la calidad de vida de los mexiquenses.</p>
+              <br>
+            </div>
+            <div class="">
+              <div class="d-grid gap-2">
+                <a href="toluca.php" class="btn btn-primary btn-lg bg-amarillo border-none m-3 " type="button">Ver
                   más</a>
               </div>
             </div>
@@ -363,9 +361,6 @@
       </div>
     </footer>
   </div>
-
-
-
   <script src="js/crouselFideicomiso.js"></script>
   <script src="js/main.js"></script>
   <!-- <script src="js/script.js"></script> -->

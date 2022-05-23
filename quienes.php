@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 
   <meta charset="utf-8">
@@ -74,12 +75,13 @@
     gtag('config', 'G-XJVZMR2N0N');
   </script>
 </head>
+
 <body>
   <main class="container">
-    
+
     <?php require 'complementos/header.php'; ?>
     <?php require 'complementos/submenu.php'; ?>
-    
+
 
     <div class="mb-4 text-white rounded bg-dark align-items-center d-flex banner-quienes">
       <!-- <div class="col-md-6 px-0 "> -->
@@ -161,21 +163,21 @@
                         <img class="img-responsive" src="img/paco-santos5.jpg" alt="">
                       </div>
                     </div>
-                              <!--END OF TESTIMONIAL 5 -->
+                    <!--END OF TESTIMONIAL 5 -->
                     <!--TESTIMONIAL 6 -->
                     <div class="item">
                       <div class="shadow-effect">
                         <img class="img-responsive" src="img/paco-santos6.jpg" alt="">
                       </div>
                     </div>
-                              <!--END OF TESTIMONIAL 6 -->
+                    <!--END OF TESTIMONIAL 6 -->
                     <!--TESTIMONIAL 7 -->
                     <div class="item">
                       <div class="shadow-effect">
                         <img class="img-responsive" src="img/paco-santos7.jpg" alt="">
                       </div>
                     </div>
-                    
+
                   </div>
                 </div>
               </div>
@@ -186,85 +188,12 @@
 
       </div>
       <div class="col-md-4">
-        <div class="position-sticky" style="top: 2rem;">
-          <div class="p-4 mb-3 bg-light rounded">
 
-            <div class="card my-3">
-              <img src="img/pacoperfil.jpg" alt="">
-            </div>
-            <h4 class="fst-italic">Oficinas</h4>
-
-            <ul class="list-unstyled ps-0">
-              <li class="mb-1">
-                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                  data-bs-target="#home-collapse" aria-expanded="true">
-                  Cuautitlán Izcalli
-                </button>
-                <div class="collapse show" id="home-collapse">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark rounded">Empoderamiento de la mujer</a></li>
-                    <li><a href="#" class="link-dark rounded">Conferencia y Talleres</a></li>
-                    <li><a href="#" class="link-dark rounded">Asesoría Jurídica</a></li>
-                    <li><a href="#" class="link-dark rounded">Escuelas</a></li>
-                    <li><a href="#" class="link-dark rounded">Personas con discapacidad</a></li>
-                    <li><a href="#" class="link-dark rounded">Cultura</a></li>
-                    <li><a href="#" class="link-dark rounded">Rescate de espacios públicos</a></li>
-                    <li><a href="#" class="link-dark rounded">Deporte</a></li>
-
-                  </ul>
-                </div>
-              </li>
-              <li class="mb-1">
-                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                  data-bs-target="#dashboard-collapse" aria-expanded="false">
-                  Tlalnepantla
-                </button>
-                <div class="collapse" id="dashboard-collapse">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark rounded">Empoderamiento de la mujer</a></li>
-                    <li><a href="#" class="link-dark rounded">Conferencia y Talleres</a></li>
-                    <li><a href="#" class="link-dark rounded">Asesoría Jurídica</a></li>
-                    <li><a href="#" class="link-dark rounded">Escuelas</a></li>
-                    <li><a href="#" class="link-dark rounded">Personas con discapacidad</a></li>
-                    <li><a href="#" class="link-dark rounded">Cultura</a></li>
-                    <li><a href="#" class="link-dark rounded">Rescate de espacios públicos</a></li>
-                    <li><a href="#" class="link-dark rounded">Deporte</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="mb-1">
-                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                  data-bs-target="#orders-collapse" aria-expanded="false">
-                  Tultitlán
-                </button>
-                <div class="collapse" id="orders-collapse">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark rounded">Empoderamiento de la mujer</a></li>
-                    <li><a href="#" class="link-dark rounded">Conferencia y Talleres</a></li>
-                    <li><a href="#" class="link-dark rounded">Asesoría Jurídica</a></li>
-                    <li><a href="#" class="link-dark rounded">Escuelas</a></li>
-                    <li><a href="#" class="link-dark rounded">Personas con discapacidad</a></li>
-                    <li><a href="#" class="link-dark rounded">Cultura</a></li>
-                    <li><a href="#" class="link-dark rounded">Rescate de espacios públicos</a></li>
-                    <li><a href="#" class="link-dark rounded">Deporte</a></li>
-                  </ul>
-                </div>
-              </li>
-              <!-- <li class="border-top my-3"></li> -->
-              <li class="mb-1">
-                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                  data-bs-target="#account-collapse" aria-expanded="false">
-                  Toluca
-                </button>
-                <div class="collapse" id="account-collapse">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="toluca.php" class="link-dark rounded">Oficina toluca</a></li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
+        <div class="card my-3">
+          <img src="img/pacoperfil.jpg" alt="">
         </div>
+        <?php include 'complementos/menu-desplegable.php'; ?>
+
       </div>
     </div>
 

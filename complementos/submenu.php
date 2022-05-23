@@ -9,10 +9,10 @@
 
                 <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="cuautitlan.php">Cuautitlán
                                 Izcalli</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" href="tlalnepantla.php">Tlalnepantla</a>
                         </li>

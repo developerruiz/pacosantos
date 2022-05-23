@@ -79,7 +79,7 @@
 <body>
 
   <main class="container">
-    
+
     <?php require 'complementos/header.php'; ?>
 
 
@@ -88,7 +88,7 @@
 
 
     <div class="mb-4 text-white rounded bg-dark align-items-center d-flex banner-gral">
-    
+
     </div>
 
 
@@ -120,8 +120,8 @@
 
 
 
-       
-  
+
+
 
         <div class="col-md-12">
           <div class="col-lg-12">
@@ -333,7 +333,7 @@
           </div>
           <!-- END OF TESTIMONIALS -->
         </div>
-     
+
 
         <article class="blog-post">
           <div class="col-lg-12 my-4">
@@ -380,7 +380,8 @@
           <div class="container-fluid p-5">
             <h2>Objetivo</h2>
             <p class="col-md-8 fs-6">
-              Consolidar el proyecto político social del Diputado Local Paco Santos, en el territorio norponiente del Estado de México, a partir del funcionamiento de las Oficinas de Atención Ciudadana.
+              Consolidar el proyecto político social del Diputado Local Paco Santos, en el territorio norponiente del
+              Estado de México, a partir del funcionamiento de las Oficinas de Atención Ciudadana.
             </p>
             <!-- <button class="btn btn-primary btn-lg" type="button">Example button</button> -->
           </div>
@@ -391,7 +392,8 @@
             <div class="h-100 p-5 text-dark bg-light rounded-3 border-amarillo">
               <h2>Misión</h2>
               <p>
-                Brindar un trato digno y eficiente de las personas, generando la cercanía con el Diputado Local para que a partir de la atención, vinculación y gestión consolidar el proyecto político social
+                Brindar un trato digno y eficiente de las personas, generando la cercanía con el Diputado Local para que
+                a partir de la atención, vinculación y gestión consolidar el proyecto político social
               </p>
             </div>
           </div>
@@ -407,97 +409,11 @@
             </div>
           </div>
         </div>
-
-
       </div>
       <div class="col-md-4">
-        <div class="position-sticky" style="top: 2rem;">
-          <div class=" mb-3 bg-light rounded">
 
-            <!-- <div class="card">
-              <img src="" alt="">
-            </div> -->
+        <?php include 'complementos/menu-desplegable.php'; ?>
 
-            <h4 class="fst-italic">Oficinas</h4>
-
-            <ul class="list-unstyled ps-0">
-              <li class="mb-1">
-                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                  data-bs-target="#home-collapse" aria-expanded="true">
-                  Cuautitlán Izcalli
-                </button>
-                <div class="collapse show" id="home-collapse">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark rounded">Empoderamiento de la mujer</a></li>
-                    <li><a href="#" class="link-dark rounded">Conferencia y Talleres</a></li>
-                    <li><a href="#" class="link-dark rounded">Asesoría Jurídica</a></li>
-                    <li><a href="#" class="link-dark rounded">Escuelas</a></li>
-                    <li><a href="#" class="link-dark rounded">Personas con discapacidad</a></li>
-                    <li><a href="#" class="link-dark rounded">Cultura</a></li>
-                    <li><a href="#" class="link-dark rounded">Rescate de espacios públicos</a></li>
-                    <li><a href="#" class="link-dark rounded">Deporte</a></li>
-
-                  </ul>
-                </div>
-              </li>
-              <li class="mb-1">
-                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                  data-bs-target="#dashboard-collapse" aria-expanded="false">
-                  Tlalnepantla
-                </button>
-                <div class="collapse" id="dashboard-collapse">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark rounded">Empoderamiento de la mujer</a></li>
-                    <li><a href="#" class="link-dark rounded">Conferencia y Talleres</a></li>
-                    <li><a href="#" class="link-dark rounded">Asesoría Jurídica</a></li>
-                    <li><a href="#" class="link-dark rounded">Escuelas</a></li>
-                    <li><a href="#" class="link-dark rounded">Personas con discapacidad</a></li>
-                    <li><a href="#" class="link-dark rounded">Cultura</a></li>
-                    <li><a href="#" class="link-dark rounded">Rescate de espacios públicos</a></li>
-                    <li><a href="#" class="link-dark rounded">Deporte</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="mb-1">
-                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                  data-bs-target="#orders-collapse" aria-expanded="false">
-                  Tultitlán
-                </button>
-                <div class="collapse" id="orders-collapse">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark rounded">Empoderamiento de la mujer</a></li>
-                    <li><a href="#" class="link-dark rounded">Conferencia y Talleres</a></li>
-                    <li><a href="#" class="link-dark rounded">Asesoría Jurídica</a></li>
-                    <li><a href="#" class="link-dark rounded">Escuelas</a></li>
-                    <li><a href="#" class="link-dark rounded">Personas con discapacidad</a></li>
-                    <li><a href="#" class="link-dark rounded">Cultura</a></li>
-                    <li><a href="#" class="link-dark rounded">Rescate de espacios públicos</a></li>
-                    <li><a href="#" class="link-dark rounded">Deporte</a></li>
-                  </ul>
-                </div>
-              </li>
-              <!-- <li class="border-top my-3"></li> -->
-              <li class="mb-1">
-                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                  data-bs-target="#account-collapse" aria-expanded="false">
-                  Toluca
-                </button>
-                <div class="collapse" id="account-collapse">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="toluca.php" class="link-dark rounded">Oficina toluca</a></li>
-                    <!-- <li><a href="#" class="link-dark rounded">Profile</a></li>
-                    <li><a href="#" class="link-dark rounded">Settings</a></li>
-                    <li><a href="#" class="link-dark rounded">Sign out</a></li> -->
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-
-
-
-        </div>
       </div>
     </div>
 
@@ -548,12 +464,15 @@
       </div>
 
       <div class="col-lg-12 text-center justify-content-center d-flex lista-redes-sociales my-5">
-    
-          <li class=""><a href="https://www.facebook.com/SoyPacoSantos"><i class="fab fa-facebook-f color-amarillo"></i></a></li>
-          <li class=""><a href="https://www.instagram.com/soypacosantos/"><i class="fab fa-instagram color-rojo"></i></a></li>
-          <li class=""><a href="https://twitter.com/soypacosantos"><i class="fab fa-twitter color-azul"></i></a></li>
-          <li class=""><a href="https://www.tiktok.com/@soypacosantos?"><i class="fab fa-tiktok color-azul-obscuro"></i></a></li>
-    
+
+        <li class=""><a href="https://www.facebook.com/SoyPacoSantos"><i
+              class="fab fa-facebook-f color-amarillo"></i></a></li>
+        <li class=""><a href="https://www.instagram.com/soypacosantos/"><i class="fab fa-instagram color-rojo"></i></a>
+        </li>
+        <li class=""><a href="https://twitter.com/soypacosantos"><i class="fab fa-twitter color-azul"></i></a></li>
+        <li class=""><a href="https://www.tiktok.com/@soypacosantos?"><i
+              class="fab fa-tiktok color-azul-obscuro"></i></a></li>
+
       </div>
       <div class="col-12 text-center">
         <h6>&copy;soypacosantos 2021 </h6>
