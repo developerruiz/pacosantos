@@ -1,93 +1,30 @@
-<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-  <div class="position-sticky pt-3">
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="dashboard_home.php">
-          <span data-feather="home"></span>
-          Inicio
-        </a>
-      </li>
-      <li class="mb-1 d-grid">
-        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-          data-bs-target="#dashboard-collapse" aria-expanded="false">
-          Usuarios
+<header class="navbar navbar-light sticky-top bg-light flex-md-nowrap p-0">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 p-0" href="#">
+    <img class="w-100 " src="../img/logo-horizontal.png" alt="">
+  </a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+    data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+  <div class="navbar-nav">
+    <div class="nav-item text-nowrap me-3 d-flex align-items-center">
+      <img src="../img/usr-icon.png" alt="" class="w-100">
+
+      <div class="dropdown">
+        <button class="btn bg-none dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <span class="fs-5 fw-bold ex2">Daniel pulido</span>
         </button>
-        <div class="collapse mt-1" id="dashboard-collapse">
-          <ul class="btn-toggle-nav list-unstyled list-group pb-1">
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="">
+          <li>
+            <h6 class="dropdown-header">Acciones</h6>
+          </li>
+          <li><a class="dropdown-item" href="procesos/cerrar_sesion.php">Cerrar sesión</a></li>
 
-            <li><a href="usuarios.php" class="col-12 m-0 p-0 ps-4 link-dark py-2">Usuarios</a></li>
-            <li><a href="regUsuario.php" class="col-12 m-0 p-0 ps-4 link-dark py-2">Registrar Usuario</a></li>
-            <li><a href="#" class="col-12 m-0 p-0 ps-4 link-dark py-2">Eliminar usuarios</a></li>
+        </ul>
+      </div>
 
-          </ul>
-        </div>
-      </li>
-      <li class="mb-1 d-grid">
-        <button class="btn btn-toggle align-items-center rounded collapsedmb-2" data-bs-toggle="collapse"
-          data-bs-target="#dashboard-collapse-evento" aria-expanded="false">
-          Eventos
-        </button>
-        <div class="collapse mt-1" id="dashboard-collapse-evento">
-          <ul class="btn-toggle-nav list-unstyled list-group pb-1">
-
-            <li><a href="eventos.php" class="col-12 m-0 p-0 ps-4 link-dark py-2">Eventos</a></li>
-            <li><a href="regEvento.php" class="col-12 m-0 p-0 ps-4 link-dark py-2">Registrar eventos</a></li>
-            <li><a href="eventos_eliminados.php" class="col-12 m-0 p-0 ps-4 link-dark py-2">Eventos eliminados</a></li>
-
-          </ul>
-        </div>
-      </li>
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="#">
-          <span data-feather="users"></span>
-          Customers
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <span data-feather="bar-chart-2"></span>
-          Reports
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <span data-feather="layers"></span>
-          Integrations
-        </a>
-      </li> -->
-    </ul>
-
-    <!-- <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-      <span>Saved reports</span>
-      <a class="link-secondary" href="#" aria-label="Add a new report">
-        <span data-feather="plus-circle"></span>
-      </a>
-    </h6> -->
-    <ul class="nav flex-column mb-2">
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="#">
-          <span data-feather="file-text"></span>
-          Current month
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <span data-feather="file-text"></span>
-          Last quarter
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <span data-feather="file-text"></span>
-          Social engagement
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="sign-out.php">
-          <i class="fas fa-sign-out-alt"></i>
-          Cerrar sesión
-        </a>
-      </li> -->
-    </ul>
+    </div>
   </div>
-</nav>
+</header>

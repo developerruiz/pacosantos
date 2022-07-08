@@ -1,15 +1,25 @@
-<?php
-session_start();
-error_reporting(0);
+<?php 
+   session_start();
+    //  error_reporting(0);
+    include '../conexion.php';
+    
+    include '../conexion2.php';
 
-include 'conexion.php';
-$varsesion = $_SESSION['usuario'];
-if($varsesion == null || $varsesion = ''){
-  echo "<script>alert('Favor de iniciar sesión');</script><script>window.location='signin.php'</script>";
-die();
-}
+    $sql = "SELECT * FROM tb_reg_dipu";
+    $sentencia = $pdo->prepare($sql);
+    $sentencia->execute();
 
-?>
+    $resultado = $sentencia->fetchAll();
+
+    $varsesion = $_SESSION['usuario'];
+    
+    if($varsesion == null || $varsesion = ''){
+      echo "<script>alert('Favor de iniciar sesión');</script><script>window.location='signin.php'</script>";
+    die();
+    }
+
+
+  ?>
 
 <!doctype html>
 <html lang="en">
@@ -60,28 +70,98 @@ die();
     <div class="row">
       <?php include 'complementos/sidebar.php'?>
       <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-        <div class="d-flex justify-content-end flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
-          <!-- <h1 class="h2">👋 Hola, Daniel Pulido</h1> -->
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+          <h1 class="h2">👋 Hola, Daniel Pulido</h1>
           <!-- <?php echo $_SESSION['usuario']?> -->
 
-          
-            <div class="btn-group d-flex justify-content-end">
-              
-              <button type="button" class="btn btn-success text-white">Exportar</button>
+          <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group me-2">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
             </div>
-          
+          </div>
         </div>
-        <!-- <div class="col-12 border-bottom">
+        <div class="col-12 border-bottom">
           <ul class="list-unstyled d-flex">
             <li class="mx-3">Ver todo</li>
             <li class="mx-3">Lorem, ipsum.</li>
             <li class="mx-3">Lorem, ipsum.</li>
           </ul>
-        </div> -->
-    
-        <h2>Usuarios</h2>
+        </div>
+        <div class="col-12 d-flex">
 
-        <div class="table-responsive">
+          <div class="col-8 p-2">
+            <canvas class="my-4 w-100" id="myChart" width="900" height="400"></canvas>
+          </div>
+
+          <div class="col-4 py-4 pe-2" style="height: 400px; overflow-y: auto;">
+            <div class="col-12 d-flex justify-content-between mb-4">
+
+              <div>
+                <h6>Usuarios</h6>
+              </div>
+
+              <div>
+                <a href="">
+                  <h6>Ver todos</h6>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="col-12 mb-2 ">
+
+              <div class="bg-light d-flex col-12 border rounded-3 p-3 align-items-center mb-3">
+                <div class="col-4">
+                  <img src="../img/usr-icon.png" alt="" class="w-100">
+                </div>
+
+                <div class="col-8">
+                  <div class="card-title">
+                    <h3>Ivan Ruiz</h3>
+                    <a href="mailto:iruiz@frasangroup.com">Enviar correo electrónico</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-light d-flex col-12 border rounded-3 p-3 align-items-center mb-3">
+                <div class="col-4">
+                  <img src="../img/usr-icon.png" alt="" class="w-100">
+                </div>
+
+                <div class="col-8">
+                  <div class="card-title">
+                    <h3>Ivan Ruiz</h3>
+                    <a href="mailto:iruiz@frasangroup.com">Enviar correo electrónico</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-light d-flex col-12 border rounded-3 p-3 align-items-center mb-3">
+                <div class="col-4">
+                  <img src="../img/usr-icon.png" alt="" class="w-100">
+                </div>
+
+                <div class="col-8">
+                  <div class="card-title">
+                    <h3>Ivan Ruiz</h3>
+                    <a href="mailto:iruiz@frasangroup.com">Enviar correo electrónico</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+
+        <h2>Section title</h2>
+
+        <!-- <div class="table-responsive">
           <table class="table table-striped table-sm">
             <thead>
               <tr>
@@ -207,7 +287,53 @@ die();
               </tr>
             </tbody>
           </table>
-        </div>
+        </div> -->
+
+
+        <table class="table table-striped table-sm">
+          <h2 class="fs-2 fw-bold fuente-antro">Informacion del cliente</h2>
+
+          <thead style="border-bottom: 2px solid #499eb2 ;">
+            <tr>
+
+              <th colspan="2" class="color-purple">Nombre</th>
+              <th class="color-purple">Apellito paterno</th>
+              <th class="color-purple">Apellido materno</th>
+              <th class="color-purple">edad</th>
+              <th class="color-purple">Email</th>
+              <th class="color-purple">Teléfono</th>
+
+
+
+            </tr>
+          </thead>
+
+          <?php foreach($resultado as $producto):?>
+
+          <tr>
+
+            <td>
+
+              <div class="">
+                <i class="fa-solid fa-user p-2 fs-3 bg-skyblue color-blue rounded top-0"></i>
+              </div>
+            </td>
+
+            <td><?php echo $producto['nombre']; ?></td>
+            <td><?php echo $producto['apellido_p']; ?></td>
+            <td><?php echo $producto['apellido_m']; ?></td>
+            <td><?php echo $producto['edad']; ?></td>
+            <td><?php echo $producto['email']; ?></td>
+            <td><?php echo $producto['telefono']; ?></td>
+
+           
+          </tr>
+
+          <?php endforeach ?>
+        </table>
+
+
+
       </main>
     </div>
   </div>
