@@ -1,0 +1,83 @@
+@font-face {
+  font-family: ex2;
+  src: url("../fuente/Exo2-Bold.otf"), url("../fuente/Exo2-BoldItalic.otf"), url("../fuente/Exo2-ExtraBold.otf"), url("../fuente/Exo2-ExtraBoldItalic.otf"), url("../fuente/Exo2-ExtraLight.otf"), url("../fuente/Exo2-ExtraLightItalic.otf"), url("../fuente/Exo2-Italic.otf"), url("../fuente/Exo2-Light.otf"), url("../fuente/Exo2-LightItalic.otf");
+}
+
+.ex2 {
+  font-family: ex2 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: ex2 !important;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.pic {
+  width: 140px;
+  height: 140px;
+  margin: auto;
+  margin-bottom: 20px;
+  border: 2px solid #0040A6;
+  border-radius: 50%;
+  position: relative;
+}
+
+.pic:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 2px solid #0040A6;
+  left: 0;
+  top: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  -webkit-animation: wave 1.5s infinite linear;
+          animation: wave 1.5s infinite linear;
+}
+
+.pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes wave {
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes wave {
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.navbar-nav .dropdown-menu {
+  position: absolute !important;
+}
+
+.dropdown-menu[data-bs-popper] {
+  left: -11px !important;
+}
+/*# sourceMappingURL=style_dashboard.css.map */

@@ -5,14 +5,15 @@ $destinatario = 'iruiz@frasangroup.com';
 
 $nombre = $_POST['nombre'];
 $email = $_POST['email'];
+$subject = "simple emails with php";
 $telefono =  $_POST['telefono'];
 $mensaje = $_POST['mensaje'];
 
 $header = "Paco Santos oficina Tlalnepantla";
 $mensajeCompleto = $mensaje . "\nAtentamente: " . $nombre . "\nEmail:" . $email;
 
-mail($destinatario, $mensajeCompleto, $header);
+mail($destinatario,$subject, $mensajeCompleto, $header);
 
 echo "<script>alert('correo enviado exitosamente')</script>";
-echo "<script> setTimeout(\"location.href='enlace.tlalnepantla.php'\",1000)</script>";
+echo "<script> setTimeout(\"location.href='tlalnepantla.php'\",1000)</script>";
 ?>

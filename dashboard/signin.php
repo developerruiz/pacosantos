@@ -8,28 +8,15 @@
     <meta name="generator" content="Hugo 0.88.1">
     <title>Signin Template · Bootstrap v5.1</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     
 
     <!-- Bootstrap core CSS -->
 <link href="../css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
+<link rel="stylesheet" href="../css/style_dashboard.css">
 
     
     <!-- Custom styles for this template -->
@@ -38,26 +25,28 @@
   <body class="text-center">
     
 <main class="form-signin">
-  <form action="validar.php" method="POST">
-    
-    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+  <form action="procesos/valida_sesion.php" method="POST">
+    <div class="pic">
+        <img class="mb-4" src="../img/logo-pacosantos.jpg" alt="" width="140" height="140">
+    </div>
+    <p class="h5 mb-3 fw-normal">Favor de iniciar sesión</h5>
 
     <div class="form-floating">
       <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="usuario">
-      <label for="floatingInput">Email address</label>
+      <label for="floatingInput">Correo electrónico</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="clave">
-      <label for="floatingPassword">Password</label>
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="contraseña">
+      <label for="floatingPassword">Contraseña</label>
     </div>
 
     <div class="checkbox mb-3">
-      <label>
+      <!-- <label>
         <input type="checkbox" value="remember-me"> Remember me
-      </label>
+      </label> -->
     </div>
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-    <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+    <button class="w-100 btn btn-lg btn-primary" type="submit"><h5>Inciar sesión</h5></button>
+    <p class="mt-5 mb-3 text-muted">&copy;Plan de bienestar 2022-2023</p>
   </form>
 </main>
 
