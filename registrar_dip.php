@@ -6,7 +6,6 @@ $apellido_m                         =$_POST['apellido_m'];
 $edad                               =$_POST['edad'];
 $edo_civil                          =$_POST['edo_civil'];
 
-
 $municipio                          =$_POST['municipio'];
 $distrito                           =$_POST['distrito'];
 $colonia                            =$_POST['colonia'];
