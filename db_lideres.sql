@@ -1,5 +1,5 @@
 CREATE TABLE tb_reg_dipu (
-    id_reg INT (10) AUTO_INCREMENT NOT NULL,
+id_reg INT (10) AUTO_INCREMENT NOT NULL,
 nombre VARCHAR (25),
 apellido_p VARCHAR (50),
 apellido_m VARCHAR (50),

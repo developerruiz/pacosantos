@@ -1,3 +1,20 @@
+<?php
+session_start();
+
+include 'conexion.php';
+$varsesion = $_SESSION['usuario'];
+$sql= "SELECT * FROM usuario_reg WHERE email  = '$varsesion'";
+
+if($varsesion == null || $varsesion = ''){
+    echo "<script>alert('Favor de iniciar sesión')</script>; <script>window-location='signin.php'</script>";
+}
+
+$Object = new DateTime();  
+$Object->setTimezone(new DateTimeZone('America/Mexico_City'));
+$DateAndTime = $Object->format("d-m-Y h:i:s a");  
+// echo $DateAndTime;
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -22,27 +39,55 @@
 </head>
 
 <body>
-
-
     <section>
         <div class="container">
+
             <div class="row">
-                <div class="col-12">
-                    <div class="col-12 col-lg-2 my-4">
+                <div class="col-12 d-flex align-items-center justify-content-between">
+                    <div class="col-4 col-lg-2 my-4">
                         <img src="img/logo-horizontal.png" alt="" class="w-100">
+                    </div>
+                    <div>
+                        <a href="dashboard/home.php">
+                            <button class="btn btn-primary btn-lg">Ir a mis registros</button>
+                        </a>
                     </div>
                 </div>
             </div>
 
-
             <form action="registrar_dip.php" method="POST" enctype="multipart/form-data" class="p-2">
                 <div class="row mb-3">
-                    <div class="col-12">
-                        <h5 class="fw-bold">Datos personales</h5>
+
+                    <div class="col-12 d-flex justify-content-between mb-4">
+                      <div class="col-6">
+                          <h4 class="fw-bold">Datos personales</h4>
+                      </div>
+                       <div class="col-6 d-flex justify-content-end">
+                         <div class="col-1">
+                             <?php
+                                 if ($result = $conexion->query($sql)) {
+                                     while ($row = $result->fetch_assoc()) {
+                                         
+                                         $field1name = $row["id_usuario_reg"];
+                        
+                                         echo "<input type='hidden' class='form-control' name='id_usuario_reg' value='"."$field1name"."'/>";
+                                     }
+                                 $result->free();
+                                 }  
+                             ?>
+                         </div>
+                         <div class="col-5">
+                             <input type="hidden" value="<?php echo $DateAndTime?>" class="form-control text-end" name="fecha_actual">
+                         </div>
+                       </div>
                     </div>
                     <div class="col-12 d-flex p-4 border rounded flex-wrap bg-beige">
                         <div class="col-lg-3 col-12 p-2">
-                            <label for="">Nombre</label>
+                            <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                            <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" class="form-control" required>
+                        </div>
+                        <div class="col-lg-3 col-12 p-2">
+                            <label for="nombre">Nombre</label>
                             <input type="text" id="" class="form-control" name="nombre" required>
                         </div>
                         <div class="col-lg-3 col-12 p-2">
@@ -142,9 +187,9 @@
                             <label for="">Sección</label>
                             <select name="seccion_grado_urbanizacion" id="" class="form-select">
 
-                                <option value="">U. hab</option>
-                                <option value="">Zona rural</option>
-                                <option value="">Zona semi rural</option>
+                                <option value="U. hab">U. hab</option>
+                                <option value="Zona rural">Zona rural</option>
+                                <option value="Zona semi rural">Zona semi rural</option>
 
                             </select>
                         </div>
@@ -185,11 +230,11 @@
                         <div class="col-lg-3 col-12 p-2">
                             <label for="">Nivel educativo</label>
                             <select id="" class="form-select" name="nivel_educativo">
-                                <option value="">Primaria</option>
-                                <option value="">Secundaria</option>
-                                <option value="">Medio superior</option>
-                                <option value="">Superior</option>
-                                <option value="">Posgrado</option>
+                                <option value="Primaria">Primaria</option>
+                                <option value="Secundaria">Secundaria</option>
+                                <option value="Medio superior">Medio superior</option>
+                                <option value="Superior">Superior</option>
+                                <option value="Posgrado">Posgrado</option>
                             </select>
                         </div>
 
@@ -221,6 +266,11 @@
                             <input type="text" class="form-control" placeholder="colonia, municipio" name="lugar">
                         </div>
                         <div class="col-lg-6 col-12 p-2">
+                            <label for="">Capacidad de movilización</label>
+                            <input type="text" class="form-control" name="cap_movilizacion">
+                        </div>
+
+                        <div class="col-lg-6 col-12 p-2">
                             <label for="">Niv. De Influencia (Tot. de capital político)</label>
                             <input type="text" class="form-control" name="influencia">
                         </div>
@@ -243,10 +293,10 @@
 
                             <select id="" class="form-select" name="asoc_religiosa">
 
-                                <option value="">católica</option>
-                                <option value="">Cristiana</option>
-                                <option value="">Evangelista</option>
-                                <option value="">Evangelista</option>
+                                <option value="católica">católica</option>
+                                <option value="Cristiana">Cristiana</option>
+                                <option value="Evangelista">Evangelista</option>
+                                <option value="Evangelista">Evangelista</option>
 
                             </select>
 
@@ -273,11 +323,10 @@
                             </label>
                             <select id="" class="form-select" name="tipo_nivel_educativo">
 
-                                <option value="">Primaria</option>
-                                <option value="">Secundaria</option>
-                                <option value="">Media superior</option>
-                                <option value="">Superior</option>
-
+                                <option value="Primaria">Primaria</option>
+                                <option value="Secundaria">Secundaria</option>
+                                <option value="Media superior">Media superior</option>
+                                <option value="Superior">Superior</option>
 
                             </select>
 
@@ -296,8 +345,8 @@
                         <div class="col-lg-3 col-12 p-2">
                             <label for=""></label>
                             <select id="" class="form-select" name="privada_publica">
-                                <option value="">Privada</option>
-                                <option value="">Pública</option>
+                                <option value="Privada">Privada</option>
+                                <option value="Pública">Pública</option>
                             </select>
                         </div>
 
@@ -376,10 +425,45 @@
                     </div>
                     <div class="col-12 d-flex p-4 border rounded flex-wrap bg-beige">
                         <div class="col-lg-6 col-12 p-2">
-                            <select name="filiacion_politica" id="" name="filiacion" class="form-select">
-                                <option value="Amarrillo">Amarrillo</option>
-                                <option value="Rojo">Rojo</option>
+                            <label for="filiacion_politica">Filiación política</label>
+                            <select name="filiacion_politica" id="filiacion_politica" class="form-select">
+                                <option value=""></option>
+                                <option value="SI">SI</option>
+                                <option value="NO">NO</option>
                             </select>
+                        </div>
+
+                        <div class="col-lg-6 col-12 p-2">
+                        <label for="">Filiación política</label>
+
+                            <select id="" name="tipo_filiacion" class="form-select">
+                                <option value="PRI">PRI</option>
+                                <option value="PAN">PAN</option>
+                                <option value="PRD">PRD</option>
+                                <option value="MPORENA">MORENA</option>
+                                <option value="OTRO">Otro</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6 col-12 p-2">
+                            <label for="">Otro</label>
+                            <input type="text" placeholder="" class="form-control" name="filiacion_otra">
+                        </div>
+
+                        <div class="col-lg-6 col-12 p-2">
+                            <label for="">¿Ha asistido a algún evento de paco santos?</label>
+                            <select name="evento_pacosantos" id="" class="form-select">
+                                <option value=""></option>
+                                <option value="SI">SI</option>
+                                <option value="NO">NO</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6 col-12 p-2">
+                            <label for="detalle_event_paco">¿Cual?</label>
+                            <input type="text" placeholder="" class="form-control" name="detalle_event_paco" id="detalle_event_paco">
+                        </div>
+                        <div class="col-lg-6 col-12 p-2">
+                            <label for="envento_veces">¿Cuantas veces?</label>
+                            <input type="text" placeholder="" class="form-control" name="envento_veces" id="envento_veces">
                         </div>
                     </div>
 

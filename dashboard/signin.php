@@ -13,7 +13,6 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     
-
     <!-- Bootstrap core CSS -->
 <link href="../css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="../css/style_dashboard.css">
@@ -46,7 +45,7 @@
       </label> -->
     </div>
     <button class="w-100 btn btn-lg btn-primary" type="submit"><h5>Inciar sesión</h5></button>
-    <p class="mt-5 mb-3 text-muted">&copy;Plan de bienestar 2022-2023</p>
+    <p class="mt-5 mb-3 text-muted">&copy;Lideres de impacto 2022-2023</p>
   </form>
 </main>
 

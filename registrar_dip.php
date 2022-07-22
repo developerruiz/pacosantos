@@ -1,5 +1,11 @@
 <?php
 include 'conexion.php';
+$fecha_actual                       =$_POST['fecha_actual'];
+$id_usuario_reg                     =$_POST['id_usuario_reg'];
+
+$fecha_nacimiento                   =$_POST['fecha_nacimiento'];
+$cap_movilizacion                   =$_POST['cap_movilizacion'];
+
 $nombre                             =$_POST['nombre'];
 $apellido_p                         =$_POST['apellido_p'];
 $apellido_m                         =$_POST['apellido_m'];
@@ -48,8 +54,23 @@ $delegados                          =$_POST['delegados'];
 $nombre_lider                       =$_POST['nombre_lider'];
 
 $filiacion_politica                 =$_POST['filiacion_politica'];
+$tipo_filiacion                     =$_POST['tipo_filiacion'];
+$filiacion_otra                     =$_POST['filiacion_otra'];
+
+$evento_pacosantos                  =$_POST['evento_pacosantos'];
+$detalle_event_paco                 =$_POST['detalle_event_paco'];
+$envento_veces                      =$_POST['envento_veces'];
+
+
+
+
 
 $insertar_registro = "INSERT INTO tb_reg_dipu SET 
+
+-- TODO: e agrega
+id_usuario_reg = '$id_usuario_reg',
+
+fecha_nacimiento = '$fecha_nacimiento',
 nombre = '$nombre',
 apellido_p = '$apellido_p',
 apellido_m = '$apellido_m',
@@ -70,6 +91,10 @@ ocupacion = '$ocupacion',
 cargos_publicos = '$cargos_publicos',
 periodo = '$periodo',
 lugar = '$lugar',
+
+-- TODO: e agrega
+cap_movilizacion ='$cap_movilizacion',
+
 influencia = '$influencia',
 asoc_religiosa = '$asoc_religiosa',
 otra = '$otra',
@@ -83,7 +108,18 @@ direccion_asociacion = '$direccion_asociacion',
 consejos = '$consejos',
 delegados = '$delegados',
 nombre_lider = '$nombre_lider',
-filiacion_politica = '$filiacion_politica'";
+filiacion_politica = '$filiacion_politica',
+
+-- TODO: e agrega
+tipo_filiacion ='$tipo_filiacion',
+
+filiacion_otra ='$filiacion_otra',
+evento_pacosantos ='$evento_pacosantos',
+detalle_event_paco ='$detalle_event_paco',
+envento_veces ='$envento_veces'
+";
+
+
 mysqli_query($conexion, $insertar_registro);
 
 if ( $insertar_registro) {
