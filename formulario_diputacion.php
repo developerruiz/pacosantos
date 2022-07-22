@@ -9,6 +9,13 @@ if($varsesion == null || $varsesion = ''){
     echo "<script>alert('Favor de iniciar sesión')</script>; <script>window-location='signin.php'</script>";
 }
 
+if ($result = $conexion->query($sql)) {
+    while ($row = $result->fetch_assoc()) {
+        $field1name = $row["id_usuario_reg"];
+    }
+$result->free();
+}  
+
 $Object = new DateTime();  
 $Object->setTimezone(new DateTimeZone('America/Mexico_City'));
 $DateAndTime = $Object->format("d-m-Y h:i:s a");  
@@ -47,11 +54,41 @@ $DateAndTime = $Object->format("d-m-Y h:i:s a");
                     <div class="col-4 col-lg-2 my-4">
                         <img src="img/logo-horizontal.png" alt="" class="w-100">
                     </div>
-                    <div>
+
+                    <!-- TODO: Boton para ver dashboard -->
+                    <!-- <div>
                         <a href="dashboard/home.php">
                             <button class="btn btn-primary btn-lg">Ir a mis registros</button>
                         </a>
+                    </div> -->
+                    <div class="d-flex">
+                        <?php
+
+        if($field1name == 7 ){
+        echo "
+        <div class='me-3'>
+        <a href='dashboard/procesos/cerrar_sesion.php'>
+            <button class='btn btn-danger '>Cerrar sesión</button>
+        </a>
+        </div>
+                <div>
+                    <a href='dashboard/home.php'>
+                        <button class='btn btn-primary '>Ir a registros</button>
+                    </a>
+                </div>
+            
+            ";
+        }else{
+                echo "<div>
+                <a href='dashboard/procesos/cerrar_sesion.php'>
+                    <button class='btn btn-danger '>Cerrar sesión</button>
+                </a>
+            </div>";
+        }
+
+        ?>
                     </div>
+
                 </div>
             </div>
 
@@ -59,12 +96,12 @@ $DateAndTime = $Object->format("d-m-Y h:i:s a");
                 <div class="row mb-3">
 
                     <div class="col-12 d-flex justify-content-between mb-4">
-                      <div class="col-6">
-                          <h4 class="fw-bold">Datos personales</h4>
-                      </div>
-                       <div class="col-6 d-flex justify-content-end">
-                         <div class="col-1">
-                             <?php
+                        <div class="col-6">
+                            <h4 class="fw-bold">Datos personales</h4>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end">
+                            <div class="col-1">
+                                <?php
                                  if ($result = $conexion->query($sql)) {
                                      while ($row = $result->fetch_assoc()) {
                                          
@@ -75,16 +112,18 @@ $DateAndTime = $Object->format("d-m-Y h:i:s a");
                                  $result->free();
                                  }  
                              ?>
-                         </div>
-                         <div class="col-5">
-                             <input type="hidden" value="<?php echo $DateAndTime?>" class="form-control text-end" name="fecha_actual">
-                         </div>
-                       </div>
+                            </div>
+                            <div class="col-5">
+                                <input type="hidden" value="<?php echo $DateAndTime?>" class="form-control text-end"
+                                    name="fecha_actual">
+                            </div>
+                        </div>
                     </div>
                     <div class="col-12 d-flex p-4 border rounded flex-wrap bg-beige">
                         <div class="col-lg-3 col-12 p-2">
                             <label for="fecha_nacimiento">Fecha de nacimiento</label>
-                            <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" class="form-control" required>
+                            <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" class="form-control"
+                                required>
                         </div>
                         <div class="col-lg-3 col-12 p-2">
                             <label for="nombre">Nombre</label>
@@ -434,7 +473,7 @@ $DateAndTime = $Object->format("d-m-Y h:i:s a");
                         </div>
 
                         <div class="col-lg-6 col-12 p-2">
-                        <label for="">Filiación política</label>
+                            <label for="">Filiación política</label>
 
                             <select id="" name="tipo_filiacion" class="form-select">
                                 <option value="PRI">PRI</option>
@@ -459,11 +498,13 @@ $DateAndTime = $Object->format("d-m-Y h:i:s a");
                         </div>
                         <div class="col-lg-6 col-12 p-2">
                             <label for="detalle_event_paco">¿Cual?</label>
-                            <input type="text" placeholder="" class="form-control" name="detalle_event_paco" id="detalle_event_paco">
+                            <input type="text" placeholder="" class="form-control" name="detalle_event_paco"
+                                id="detalle_event_paco">
                         </div>
                         <div class="col-lg-6 col-12 p-2">
                             <label for="envento_veces">¿Cuantas veces?</label>
-                            <input type="text" placeholder="" class="form-control" name="envento_veces" id="envento_veces">
+                            <input type="text" placeholder="" class="form-control" name="envento_veces"
+                                id="envento_veces">
                         </div>
                     </div>
 
