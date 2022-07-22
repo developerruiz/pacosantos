@@ -29,7 +29,7 @@
     echo $field1name;
 
     if($filas>0){
-
+ 
         if($field1name == '0'){
 
             $session_estatus= "UPDATE usuario_reg SET session_estatus = '1' WHERE email = '$usuario' AND contraseña = '$contraseña';";
